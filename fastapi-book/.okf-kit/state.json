@@ -1,0 +1,420 @@
+{
+  "generator": "okf-kit",
+  "okf_version": "0.1",
+  "root_url": "https://fastapi.tiangolo.com/tutorial",
+  "updated_at": "2026-07-07T08:53:01.827198+00:00",
+  "config": {
+    "max_depth": 3,
+    "max_pages": 90,
+    "fetcher": "http",
+    "respect_robots": true,
+    "path_prefix": "/tutorial/"
+  },
+  "page_count": 51,
+  "pages": [
+    {
+      "path": "pages/tutorial.md",
+      "url": "https://fastapi.tiangolo.com/tutorial",
+      "title": "Tutorial - User Guide - FastAPI",
+      "hash": "ab1dcc1e8c0084abdfc12d20508c2369eb6386095d204cb6fc9c6d4808c019f1"
+    },
+    {
+      "path": "pages/tutorial/background-tasks.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/background-tasks",
+      "title": "Background Tasks - FastAPI",
+      "hash": "c997104c5092a9a80579500360c885374e94d6c6b1c495e4cdc2d46b6cf8f9db"
+    },
+    {
+      "path": "pages/tutorial/bigger-applications.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/bigger-applications",
+      "title": "Bigger Applications - Multiple Files - FastAPI",
+      "hash": "08629b900df9671cf338921262c0295578e0f03d86dbbfeb2d213cf82f02520d"
+    },
+    {
+      "path": "pages/tutorial/body-fields.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/body-fields",
+      "title": "Body - Fields - FastAPI",
+      "hash": "f691df729cb062f6f38d3e127ece86ee0ab26add2257b3b27a47d3109c063fb5"
+    },
+    {
+      "path": "pages/tutorial/body-multiple-params.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/body-multiple-params",
+      "title": "Body - Multiple Parameters - FastAPI",
+      "hash": "ce5d13a9e1f7cd758fc1576ab5ddeba1fbc0d95b2d9a9ec4b607ade696d9acd2"
+    },
+    {
+      "path": "pages/tutorial/body-nested-models.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/body-nested-models",
+      "title": "Body - Nested Models - FastAPI",
+      "hash": "8711cc1ea4bd5646a86e3637d94ca90c37e214832e3aa1806da3a604a64aac73"
+    },
+    {
+      "path": "pages/tutorial/body-updates.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/body-updates",
+      "title": "Body - Updates - FastAPI",
+      "hash": "70053686520a41980697d957f5bd2c6f3021abb89d634d73df59b84a21a77ca9"
+    },
+    {
+      "path": "pages/tutorial/body.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/body",
+      "title": "Request Body - FastAPI",
+      "hash": "b628fea4856d12290822d68a234d4c4ed642d11111c25a0de9f3c74111002204"
+    },
+    {
+      "path": "pages/tutorial/cookie-param-models.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/cookie-param-models",
+      "title": "Cookie Parameter Models - FastAPI",
+      "hash": "4b538e54c40b8051f19dc46da2e807547885e07ca00015dff01d2374481059da"
+    },
+    {
+      "path": "pages/tutorial/cookie-params.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/cookie-params",
+      "title": "Cookie Parameters - FastAPI",
+      "hash": "383106a836815edd535e70eb6b8fe735a5f3da87f3d753203bb2b4b7c550b342"
+    },
+    {
+      "path": "pages/tutorial/cors.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/cors",
+      "title": "CORS (Cross-Origin Resource Sharing) - FastAPI",
+      "hash": "d36c844f3de59ec6f0c1e3aaf5760a2823c0426df1bbcc693b3b18470f5ace4a"
+    },
+    {
+      "path": "pages/tutorial/debugging.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/debugging",
+      "title": "Debugging - FastAPI",
+      "hash": "a22ccde984828569688954ad40bb573947fed033ae57c900b76e1fcf1878676b"
+    },
+    {
+      "path": "pages/tutorial/dependencies.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/dependencies",
+      "title": "Dependencies - FastAPI",
+      "hash": "2d42a91a7b15db3d43f7d6961658f6541310c306064f76211219ae65d130543a"
+    },
+    {
+      "path": "pages/tutorial/dependencies/classes-as-dependencies.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/dependencies/classes-as-dependencies",
+      "title": "Classes as Dependencies - FastAPI",
+      "hash": "e939c6098bbdab03f24fecc46d74d4a1487ce73b5aa533fcf93f05db4b88dfc8"
+    },
+    {
+      "path": "pages/tutorial/dependencies/dependencies-in-path-operation-decorators.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators",
+      "title": "Dependencies in path operation decorators - FastAPI",
+      "hash": "0239fd643b8a16f0dda933a8b86fc6cd875144f60bfe7cf4c7d25b1bd0225a36"
+    },
+    {
+      "path": "pages/tutorial/dependencies/dependencies-with-yield.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-with-yield",
+      "title": "Dependencies with yield - FastAPI",
+      "hash": "20cb899af6bda713a1335366888286394d1150a6fd6b03b6dcd9e9807264fc70"
+    },
+    {
+      "path": "pages/tutorial/dependencies/global-dependencies.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/dependencies/global-dependencies",
+      "title": "Global Dependencies - FastAPI",
+      "hash": "590a141ec82e4f6d31bcffc1523a63a1a1b78dc5053652896a670c12954c20c0"
+    },
+    {
+      "path": "pages/tutorial/dependencies/sub-dependencies.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/dependencies/sub-dependencies",
+      "title": "Sub-dependencies - FastAPI",
+      "hash": "49db78c7f5c981d39280cd8d34bcc38fc7a9a6346d31e8d506be71cb6a2d4823"
+    },
+    {
+      "path": "pages/tutorial/encoder.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/encoder",
+      "title": "JSON Compatible Encoder - FastAPI",
+      "hash": "fc3658a4754a77798254766833e0fa603d866658885e1733c41e3771b86f2cf6"
+    },
+    {
+      "path": "pages/tutorial/extra-data-types.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/extra-data-types",
+      "title": "Extra Data Types - FastAPI",
+      "hash": "3c4949a7021f9b2a59b039b188904e183f4924c392b533d33f73c27b33a018a7"
+    },
+    {
+      "path": "pages/tutorial/extra-models.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/extra-models",
+      "title": "Extra Models - FastAPI",
+      "hash": "381d0624b9b68e29894b6afe200e26b8c5a1fba0a6361e33e9138693cc670c69"
+    },
+    {
+      "path": "pages/tutorial/first-steps.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/first-steps",
+      "title": "First Steps - FastAPI",
+      "hash": "0f42960455431294112ecb92ce7e1a47cef71dd78a5e589d4ae4c6b4d5165db5"
+    },
+    {
+      "path": "pages/tutorial/frontend.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/frontend",
+      "title": "Frontend - FastAPI",
+      "hash": "9f9f4e15c380facba7a64f1ab4fed32b2bfd790d14a444d77e59661e7f3889be"
+    },
+    {
+      "path": "pages/tutorial/handling-errors.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/handling-errors",
+      "title": "Handling Errors - FastAPI",
+      "hash": "c1ca465f0fb2e7274890fb65940c6cc8c0eef5120e80bbd1104457592b58309d"
+    },
+    {
+      "path": "pages/tutorial/header-param-models.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/header-param-models",
+      "title": "Header Parameter Models - FastAPI",
+      "hash": "28d52216219e840b75ecdbedb8050ce81e63e914ae2d7f52495ad9104de28a01"
+    },
+    {
+      "path": "pages/tutorial/header-params.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/header-params",
+      "title": "Header Parameters - FastAPI",
+      "hash": "0b30c6fc711b15020d86da14fb94a1579d7b89f475809bc200fc8d9772a9fcbb"
+    },
+    {
+      "path": "pages/tutorial/metadata.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/metadata",
+      "title": "Metadata and Docs URLs - FastAPI",
+      "hash": "7c428ea525fc9f8fc7042f526dfb3b465028c2da64872d7d34e69a7849a657c2"
+    },
+    {
+      "path": "pages/tutorial/middleware.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/middleware",
+      "title": "Middleware - FastAPI",
+      "hash": "e7e400b77125bb42018fc62341893f14b13218bed7c652d7c6bec2e8e1db84a4"
+    },
+    {
+      "path": "pages/tutorial/path-operation-configuration.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/path-operation-configuration",
+      "title": "Path Operation Configuration - FastAPI",
+      "hash": "e9ec6e7c373b11dfe85a4b62e2124d638e03c024a409d7f9f57711080b7326b9"
+    },
+    {
+      "path": "pages/tutorial/path-params-numeric-validations.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations",
+      "title": "Path Parameters and Numeric Validations - FastAPI",
+      "hash": "f60bdc4400c00ce39f5c322b93e188e7ac5b33d3e6a9532579ff117bcc2585b6"
+    },
+    {
+      "path": "pages/tutorial/path-params.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/path-params",
+      "title": "Path Parameters - FastAPI",
+      "hash": "31dd0d95f6551138d8b92734e31e18a0fdb547101813335221a78a3ee13464f6"
+    },
+    {
+      "path": "pages/tutorial/query-param-models.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/query-param-models",
+      "title": "Query Parameter Models - FastAPI",
+      "hash": "dfb97aaa7d95e61b57522ebbf3b9783690372f60cddfb8211300193b60dce2fe"
+    },
+    {
+      "path": "pages/tutorial/query-params-str-validations.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations",
+      "title": "Query Parameters and String Validations - FastAPI",
+      "hash": "f6d2853d04e01a50a314e156901f3d988e46dc8bad76ecf55a71b95ee4a65d83"
+    },
+    {
+      "path": "pages/tutorial/query-params.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/query-params",
+      "title": "Query Parameters - FastAPI",
+      "hash": "145bd703aa2d15288742a97e49b5f900a6368facefee07d1c90fdf1dc58b6046"
+    },
+    {
+      "path": "pages/tutorial/request-files.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/request-files",
+      "title": "Request Files - FastAPI",
+      "hash": "7720f8d058822bfa5c9e5f24b16fb25c69e675503af66100887aba6990d2ff5b"
+    },
+    {
+      "path": "pages/tutorial/request-form-models.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/request-form-models",
+      "title": "Form Models - FastAPI",
+      "hash": "f51eeae2e5c756d2940945a265f99d43041f1844f1ae810143d8a887f512d954"
+    },
+    {
+      "path": "pages/tutorial/request-forms-and-files.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/request-forms-and-files",
+      "title": "Request Forms and Files - FastAPI",
+      "hash": "a291226f9878523cbb5b1dc5f632c7a8cfbcee3edbe6bfc9ee5c411258ebeaf5"
+    },
+    {
+      "path": "pages/tutorial/request-forms.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/request-forms",
+      "title": "Form Data - FastAPI",
+      "hash": "e187d9b98ce347d32f69a4cee324696ea21b52252f5dc891cff4c1e79960c6fd"
+    },
+    {
+      "path": "pages/tutorial/response-model.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/response-model",
+      "title": "Response Model - Return Type - FastAPI",
+      "hash": "0a0c24ea1f6cb18ef300bc9d18630699cf6e263d32a4e96ff3a755b4cf384455"
+    },
+    {
+      "path": "pages/tutorial/response-status-code.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/response-status-code",
+      "title": "Response Status Code - FastAPI",
+      "hash": "8d3aeee2b443ec92ef4f504c84c9b6d7850589b1123e50f46d26518e9e2d50b0"
+    },
+    {
+      "path": "pages/tutorial/schema-extra-example.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/schema-extra-example",
+      "title": "Declare Request Example Data - FastAPI",
+      "hash": "2f3fd97653f7267c5d2c76e15c08e45b59acbee93a2a3fa88f22c1d77fe55b3f"
+    },
+    {
+      "path": "pages/tutorial/security.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/security",
+      "title": "Security - FastAPI",
+      "hash": "898d03af63108c2c41db4070398435d5fde0448261a65f41b09cc0e074c14b21"
+    },
+    {
+      "path": "pages/tutorial/security/first-steps.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/security/first-steps",
+      "title": "Security - First Steps - FastAPI",
+      "hash": "b845d7dfd30b9cafedcd2efaad57974d3629105ba1b94801383a137598d01079"
+    },
+    {
+      "path": "pages/tutorial/security/get-current-user.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/security/get-current-user",
+      "title": "Get Current User - FastAPI",
+      "hash": "42b1336430a741809dbce2db88329df9d02b1f54200356fef9947ffc28117959"
+    },
+    {
+      "path": "pages/tutorial/security/oauth2-jwt.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt",
+      "title": "OAuth2 with Password (and hashing), Bearer with JWT tokens - FastAPI",
+      "hash": "a37de0d0113ab729ab84e92ab3da8c7a1d9553717ed20281db0a2a858a967642"
+    },
+    {
+      "path": "pages/tutorial/security/simple-oauth2.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/security/simple-oauth2",
+      "title": "Simple OAuth2 with Password and Bearer - FastAPI",
+      "hash": "476fe41fe01024c8475d45f6a6d1c2547ef0c5388f1115db094bf5068be3d512"
+    },
+    {
+      "path": "pages/tutorial/server-sent-events.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/server-sent-events",
+      "title": "Server-Sent Events (SSE) - FastAPI",
+      "hash": "76fab595540239c540616fd889b7350ca5ff44ee4f86e88dfe6e6c6dcb46253d"
+    },
+    {
+      "path": "pages/tutorial/sql-databases.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/sql-databases",
+      "title": "SQL (Relational) Databases - FastAPI",
+      "hash": "735417f30d2431967a087aae6d601451fefcf2e25ac98098286e5b92b92c6920"
+    },
+    {
+      "path": "pages/tutorial/static-files.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/static-files",
+      "title": "Static Files - FastAPI",
+      "hash": "e41fb2c81fb17a0fcfee8e34bf0e63deb1ccf5593d22ea6af530caa73cf666c0"
+    },
+    {
+      "path": "pages/tutorial/stream-json-lines.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/stream-json-lines",
+      "title": "Stream JSON Lines - FastAPI",
+      "hash": "a5e50877870ffcf16afbf87092a55a3cdb69a040b819871401ea14c7010ee48e"
+    },
+    {
+      "path": "pages/tutorial/testing.md",
+      "url": "https://fastapi.tiangolo.com/tutorial/testing",
+      "title": "Testing - FastAPI",
+      "hash": "b4f6d4f56dd35b1e144e8a143a6b8e09682df556d57c6bbb2648a300337f0255"
+    }
+  ],
+  "edges": [
+    [
+      "pages/tutorial/bigger-applications.md",
+      "pages/tutorial/dependencies/dependencies-in-path-operation-decorators.md"
+    ],
+    [
+      "pages/tutorial/bigger-applications.md",
+      "pages/tutorial/dependencies/global-dependencies.md"
+    ],
+    [
+      "pages/tutorial/bigger-applications.md",
+      "pages/tutorial/security.md"
+    ],
+    [
+      "pages/tutorial/body-updates.md",
+      "pages/tutorial/extra-models.md"
+    ],
+    [
+      "pages/tutorial/body.md",
+      "pages/tutorial/body-multiple-params.md"
+    ],
+    [
+      "pages/tutorial/dependencies/dependencies-in-path-operation-decorators.md",
+      "pages/tutorial/bigger-applications.md"
+    ],
+    [
+      "pages/tutorial/dependencies/dependencies-in-path-operation-decorators.md",
+      "pages/tutorial/security.md"
+    ],
+    [
+      "pages/tutorial/dependencies/dependencies-with-yield.md",
+      "pages/tutorial/handling-errors.md"
+    ],
+    [
+      "pages/tutorial/dependencies/global-dependencies.md",
+      "pages/tutorial/bigger-applications.md"
+    ],
+    [
+      "pages/tutorial/dependencies/global-dependencies.md",
+      "pages/tutorial/dependencies/dependencies-in-path-operation-decorators.md"
+    ],
+    [
+      "pages/tutorial/extra-models.md",
+      "pages/tutorial/security/simple-oauth2.md"
+    ],
+    [
+      "pages/tutorial/metadata.md",
+      "pages/tutorial/path-operation-configuration.md"
+    ],
+    [
+      "pages/tutorial/middleware.md",
+      "pages/tutorial/background-tasks.md"
+    ],
+    [
+      "pages/tutorial/middleware.md",
+      "pages/tutorial/cors.md"
+    ],
+    [
+      "pages/tutorial/path-params-numeric-validations.md",
+      "pages/tutorial/query-params-str-validations.md"
+    ],
+    [
+      "pages/tutorial/query-params.md",
+      "pages/tutorial/path-params.md"
+    ],
+    [
+      "pages/tutorial/security/simple-oauth2.md",
+      "pages/tutorial/extra-models.md"
+    ],
+    [
+      "pages/tutorial/server-sent-events.md",
+      "pages/tutorial/encoder.md"
+    ],
+    [
+      "pages/tutorial/server-sent-events.md",
+      "pages/tutorial/stream-json-lines.md"
+    ],
+    [
+      "pages/tutorial/static-files.md",
+      "pages/tutorial/frontend.md"
+    ],
+    [
+      "pages/tutorial/stream-json-lines.md",
+      "pages/tutorial/encoder.md"
+    ],
+    [
+      "pages/tutorial/stream-json-lines.md",
+      "pages/tutorial/server-sent-events.md"
+    ],
+    [
+      "pages/tutorial/testing.md",
+      "pages/tutorial/bigger-applications.md"
+    ],
+    [
+      "pages/tutorial/testing.md",
+      "pages/tutorial/encoder.md"
+    ]
+  ]
+}
