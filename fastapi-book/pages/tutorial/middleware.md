@@ -4,7 +4,7 @@ title: Middleware - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/middleware
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Middleware
@@ -24,7 +24,7 @@ Technical Details
 
 If you have dependencies with `yield`, the exit code will run *after* the middleware.
 
-If there were any background tasks (covered in the Background Tasks section, you will see it later), they will run *after* all the middleware.
+If there were any background tasks (covered in the [Background Tasks](../background-tasks/) section, you will see it later), they will run *after* all the middleware.
 
 ## Create a middleware
 
@@ -53,9 +53,9 @@ async def add_process_time_header(request: Request, call_next):
 ```
 Tip
 
-Keep in mind that custom proprietary headers can be added using the `X-` prefix.
+Keep in mind that custom proprietary headers can be added [using the  X- prefix](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers).
 
-But if you have custom headers that you want a client in a browser to be able to see, you need to add them to your CORS configurations (CORS (Cross-Origin Resource Sharing)) using the parameter `expose_headers` documented in Starlette's CORS docs.
+But if you have custom headers that you want a client in a browser to be able to see, you need to add them to your CORS configurations ([CORS (Cross-Origin Resource Sharing)](../cors/)) using the parameter `expose_headers` documented in [Starlette's CORS docs](https://www.starlette.dev/middleware/#corsmiddleware).
 
 Technical Details
 
@@ -85,9 +85,9 @@ async def add_process_time_header(request: Request, call_next):
 ```
 Tip
 
-Here we use `time.perf_counter()` instead of `time.time()` because it can be more precise for these use cases. 🤓
+Here we use [ time.perf_counter()](https://docs.python.org/3/library/time.html#time.perf_counter) instead of 
 
-## Multiple middleware execution order
+`time.time()` because it can be more precise for these use cases. 🤓## Multiple middleware execution order
 
 When you add multiple middlewares using either `@app.middleware()` decorator or `app.add_middleware()` method, each new middleware wraps the application, forming a stack. The last middleware added is the *outermost*, and the first is the *innermost*.
 
@@ -112,7 +112,7 @@ This stacking behavior ensures that middlewares are executed in a predictable an
 
 ## Other middlewares
 
-You can later read more about other middlewares in the Advanced User Guide: Advanced Middleware.
+You can later read more about other middlewares in the [Advanced User Guide: Advanced Middleware](../../advanced/middleware/).
 
 You will read about how to handle CORS with a middleware in the next section.
 

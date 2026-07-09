@@ -4,7 +4,7 @@ title: Metadata and Docs URLs - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/metadata
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Metadata and Docs URLs
@@ -36,7 +36,7 @@ You can set the following fields that are used in the OpenAPI specification and 
 | Parameter | Type | Description | 
 |---|---|---|
 | `name` | `str` | REQUIRED(if a`license_info`is set). The license name used for the API. | 
-| `identifier` | `str` | An SPDX license expression for the API. The `identifier`field is mutually exclusive of the`url`field. Available since OpenAPI 3.1.0, FastAPI 0.99.0. | 
+| `identifier` | `str` | An [SPDX](https://spdx.org/licenses/)license expression for the API. The`identifier`field is mutually exclusive of the`url`field. Available since OpenAPI 3.1.0, FastAPI 0.99.0. | 
 | `url` | `str` | A URL to the license used for the API. MUST be in the format of a URL. | 
 
 You can set them as follows:
@@ -195,7 +195,7 @@ async def get_items():
 ```
 Note
 
-Read more about tags in Path Operation Configuration.
+Read more about tags in [Path Operation Configuration](../path-operation-configuration/#tags).
 
 ### Check the docs
 

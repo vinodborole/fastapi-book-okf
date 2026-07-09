@@ -4,7 +4,7 @@ title: Dependencies in path operation decorators - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Dependencies in path operation decorators
@@ -72,7 +72,7 @@ Note
 
 In this example we use invented custom headers `X-Key` and `X-Token`.
 
-But in real cases, when implementing security, you would get more benefits from using the integrated Security utilities (the next chapter).
+But in real cases, when implementing security, you would get more benefits from using the integrated [Security utilities (the next chapter)](../../security/).
 
 ## Dependencies errors and return values
 
@@ -199,7 +199,7 @@ async def read_items():
 ```
 ## Dependencies for a group of *path operations*
 
-Later, when reading about how to structure bigger applications (Bigger Applications - Multiple Files), possibly with multiple files, you will learn how to declare a single `dependencies` parameter for a group of *path operations*.
+Later, when reading about how to structure bigger applications ([Bigger Applications - Multiple Files](../../../tutorial/bigger-applications/)), possibly with multiple files, you will learn how to declare a single `dependencies` parameter for a group of *path operations*.
 
 ## Global Dependencies
 

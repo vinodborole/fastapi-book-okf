@@ -4,7 +4,7 @@ title: Path Operation Configuration - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/path-operation-configuration
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Path Operation Configuration
@@ -119,7 +119,7 @@ async def create_item(item: Item) -> Item:
 
 As descriptions tend to be long and cover multiple lines, you can declare the *path operation* description in the function docstring and **FastAPI** will read it from there.
 
-You can write Markdown in the docstring, it will be interpreted and displayed correctly (taking into account docstring indentation).
+You can write [Markdown](https://en.wikipedia.org/wiki/Markdown) in the docstring, it will be interpreted and displayed correctly (taking into account docstring indentation).
 
 ```
 from fastapi import FastAPI

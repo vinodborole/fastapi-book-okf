@@ -4,24 +4,24 @@ title: Testing - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/testing
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Testing
 
-Thanks to Starlette, testing **FastAPI** applications is easy and enjoyable.
+Thanks to [Starlette](https://www.starlette.dev/testclient/), testing **FastAPI** applications is easy and enjoyable.
 
-It is based on HTTPX, which in turn is designed based on Requests, so it's very familiar and intuitive.
+It is based on [HTTPX](https://www.python-httpx.org), which in turn is designed based on Requests, so it's very familiar and intuitive.
 
-With it, you can use pytest directly with **FastAPI**.
+With it, you can use [pytest](https://docs.pytest.org/) directly with **FastAPI**.
 
 ## Using `TestClient`
 
 Note
 
-To use `TestClient`, first install `httpx`.
+To use `TestClient`, first install [ httpx](https://www.python-httpx.org).
 
-Make sure you create a virtual environment, activate it, and then install it, for example:
+Make sure you create a [virtual environment](../../virtual-environments/), activate it, and then install it, for example:
 
 ```
 $ pip install httpx
@@ -65,7 +65,7 @@ You could also use `from starlette.testclient import TestClient`.
 
 Tip
 
-If you want to call `async` functions in your tests apart from sending requests to your FastAPI application (e.g. asynchronous database functions), have a look at the Async Tests in the advanced tutorial.
+If you want to call `async` functions in your tests apart from sending requests to your FastAPI application (e.g. asynchronous database functions), have a look at the [Async Tests](../../advanced/async-tests/) in the advanced tutorial.
 
 ## Separating tests
 
@@ -75,7 +75,7 @@ And your **FastAPI** application might also be composed of several files/modules
 
 **FastAPI** app file
 
-Let's say you have a file structure as described in Bigger Applications:
+Let's say you have a file structure as described in [Bigger Applications](../bigger-applications/):
 
 ```
 .
@@ -332,19 +332,19 @@ E.g.:
 - To pass *headers*, use a`dict`in the`headers`parameter.
 - For *cookies*, a`dict`in the`cookies`parameter.
 
-For more information about how to pass data to the backend (using `httpx` or the `TestClient`) check the HTTPX documentation.
+For more information about how to pass data to the backend (using `httpx` or the `TestClient`) check the [HTTPX documentation](https://www.python-httpx.org).
 
 Note
 
 Note that the `TestClient` receives data that can be converted to JSON, not Pydantic models.
 
-If you have a Pydantic model in your test and you want to send its data to the application during testing, you can use the `jsonable_encoder` described in JSON Compatible Encoder.
+If you have a Pydantic model in your test and you want to send its data to the application during testing, you can use the `jsonable_encoder` described in [JSON Compatible Encoder](../encoder/).
 
 ## Run it
 
 After that, you just need to install `pytest`.
 
-Make sure you create a virtual environment, activate it, and then install it, for example:
+Make sure you create a [virtual environment](../../virtual-environments/), activate it, and then install it, for example:
 
 ```
 $ pip install pytest

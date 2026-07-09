@@ -4,7 +4,7 @@ title: Body - Fields - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/body-fields
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Body - Fields
@@ -126,7 +126,7 @@ You will learn more about adding extra information later in the docs, when learn
 Warning
 
 Extra keys passed to `Field` will also be present in the resulting OpenAPI schema for your application.
-As these keys may not necessarily be part of the OpenAPI specification, some OpenAPI tools, for example the OpenAPI validator, may not work with your generated schema.
+As these keys may not necessarily be part of the OpenAPI specification, some OpenAPI tools, for example [the OpenAPI validator](https://validator.swagger.io/), may not work with your generated schema.
 
 ## Recap
 

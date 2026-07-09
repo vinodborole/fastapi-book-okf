@@ -4,7 +4,7 @@ title: Path Parameters and Numeric Validations - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Path Parameters and Numeric Validations
@@ -54,7 +54,7 @@ FastAPI added support for `Annotated` (and started recommending it) in version 0
 
 If you have an older version, you would get errors when trying to use `Annotated`.
 
-Make sure you Upgrade the FastAPI version to at least 0.95.1 before using `Annotated`.
+Make sure you [Upgrade the FastAPI version](../../deployment/versions/#upgrading-the-fastapi-versions) to at least 0.95.1 before using `Annotated`.
 
 ## Declare metadata
 
@@ -385,7 +385,7 @@ async def read_items(
 ```
 ## Recap
 
-With `Query`, `Path` (and others you haven't seen yet) you can declare metadata and string validations in the same ways as with Query Parameters and String Validations.
+With `Query`, `Path` (and others you haven't seen yet) you can declare metadata and string validations in the same ways as with [Query Parameters and String Validations](../query-params-str-validations/).
 
 And you can also declare numeric validations:
 

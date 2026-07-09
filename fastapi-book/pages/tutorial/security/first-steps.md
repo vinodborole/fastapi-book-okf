@@ -4,7 +4,7 @@ title: Security - First Steps - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/security/first-steps
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Security - First Steps
@@ -58,11 +58,13 @@ async def read_items(token: str = Depends(oauth2_scheme)):
 
 Note
 
-The `python-multipart` package is automatically installed with **FastAPI** when you run the `pip install "fastapi[standard]"` command.
+The [ python-multipart](https://github.com/Kludex/python-multipart) package is automatically installed with 
 
-However, if you use the `pip install fastapi` command, the `python-multipart` package is not included by default.
+**FastAPI**when you run the
 
-To install it manually, make sure you create a virtual environment, activate it, and then install it with:
+`pip install "fastapi[standard]"` command.However, if you use the `pip install fastapi` command, the `python-multipart` package is not included by default.
+
+To install it manually, make sure you create a [virtual environment](../../../virtual-environments/), activate it, and then install it with:
 
 ```
 $ pip install python-multipart
@@ -77,7 +79,7 @@ $ fastapi dev
 ```
 ## Check it
 
-Go to the interactive docs at: http://127.0.0.1:8000/docs.
+Go to the interactive docs at: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
 You will see something like this:
 
@@ -176,7 +178,7 @@ Here `tokenUrl="token"` refers to a relative URL `token` that we haven't created
 
 Because we are using a relative URL, if your API was located at `https://example.com/`, then it would refer to `https://example.com/token`. But if your API was located at `https://example.com/api/v1/`, then it would refer to `https://example.com/api/v1/token`.
 
-Using a relative URL is important to make sure your application keeps working even in an advanced use case like Behind a Proxy.
+Using a relative URL is important to make sure your application keeps working even in an advanced use case like [Behind a Proxy](../../../advanced/behind-a-proxy/).
 
 This parameter doesn't create that endpoint / *path operation*, but declares that the URL `/token` will be the one that the client should use to get the token. That information is used in OpenAPI, and then in the interactive API documentation systems.
 

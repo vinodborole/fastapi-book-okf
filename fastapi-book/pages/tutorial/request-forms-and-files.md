@@ -4,7 +4,7 @@ title: Request Forms and Files - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/request-forms-and-files
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Request Forms and Files
@@ -13,9 +13,9 @@ You can define files and form fields at the same time using `File` and `Form`.
 
 Note
 
-To receive uploaded files and/or form data, first install `python-multipart`.
+To receive uploaded files and/or form data, first install [ python-multipart](https://github.com/Kludex/python-multipart).
 
-Make sure you create a virtual environment, activate it, and then install it, for example:
+Make sure you create a [virtual environment](../../virtual-environments/), activate it, and then install it, for example:
 
 ```
 $ pip install python-multipart

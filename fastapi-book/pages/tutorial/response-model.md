@@ -4,7 +4,7 @@ title: Response Model - Return Type - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/response-model
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Response Model - Return Type
@@ -131,9 +131,9 @@ async def create_user(user: UserIn) -> UserIn:
 ```
 Note
 
-To use `EmailStr`, first install `email-validator`.
+To use `EmailStr`, first install [ email-validator](https://github.com/JoshData/python-email-validator).
 
-Make sure you create a virtual environment, activate it, and then install it, for example:
+Make sure you create a [virtual environment](../../virtual-environments/), activate it, and then install it, for example:
 
 ```
 $ pip install email-validator
@@ -301,7 +301,7 @@ There might be cases where you return something that is not a valid Pydantic fie
 
 ### Return a Response Directly
 
-The most common case would be returning a Response directly as explained later in the advanced docs.
+The most common case would be [returning a Response directly as explained later in the advanced docs](../../advanced/response-directly/).
 
 ```
 from fastapi import FastAPI, Response
@@ -440,7 +440,7 @@ You can also use:
 - `response_model_exclude_defaults=True`
 - `response_model_exclude_none=True`
 
-as described in the Pydantic docs for `exclude_defaults` and `exclude_none`.
+as described in [the Pydantic docs](https://docs.pydantic.dev/1.10/usage/exporting_models/#modeldict) for `exclude_defaults` and `exclude_none`.
 
 #### Data with values for fields with defaults
 

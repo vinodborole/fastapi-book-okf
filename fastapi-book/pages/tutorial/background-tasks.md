@@ -4,7 +4,7 @@ title: Background Tasks - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/background-tasks
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Background Tasks
@@ -143,7 +143,7 @@ And then another background task generated at the *path operation function* will
 
 ## Technical Details
 
-The class `BackgroundTasks` comes directly from `starlette.background`.
+The class `BackgroundTasks` comes directly from [ starlette.background](https://www.starlette.dev/background/).
 
 It is imported/included directly into FastAPI so that you can import it from `fastapi` and avoid accidentally importing the alternative `BackgroundTask` (without the `s` at the end) from `starlette.background`.
 
@@ -151,11 +151,11 @@ By only using `BackgroundTasks` (and not `BackgroundTask`), it's then possible t
 
 It's still possible to use `BackgroundTask` alone in FastAPI, but you have to create the object in your code and return a Starlette `Response` including it.
 
-You can see more details in Starlette's official docs for Background Tasks.
+You can see more details in [Starlette's official docs for Background Tasks](https://www.starlette.dev/background/).
 
 ## Caveat
 
-If you need to perform heavy background computation and you don't necessarily need it to be run by the same process (for example, you don't need to share memory, variables, etc), you might benefit from using other bigger tools like Celery.
+If you need to perform heavy background computation and you don't necessarily need it to be run by the same process (for example, you don't need to share memory, variables, etc), you might benefit from using other bigger tools like [Celery](https://docs.celeryq.dev).
 
 They tend to require more complex configurations, a message/job queue manager, like RabbitMQ or Redis, but they allow you to run background tasks in multiple processes, and especially, in multiple servers.
 

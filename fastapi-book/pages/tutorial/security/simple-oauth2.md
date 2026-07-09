@@ -4,7 +4,7 @@ title: Simple OAuth2 with Password and Bearer - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/security/simple-oauth2
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Simple OAuth2 with Password and Bearer
@@ -575,7 +575,7 @@ UserInDB(
 ```
 Note
 
-For a more complete explanation of `**user_dict` check back in the documentation for **Extra Models**.
+For a more complete explanation of `**user_dict` check back in [the documentation for  Extra Models](../../extra-models/#about-user-in-model-dump).
 
 ## Return the token
 
@@ -923,7 +923,7 @@ That's the benefit of standards...
 
 ## See it in action
 
-Open the interactive docs: http://127.0.0.1:8000/docs.
+Open the interactive docs: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
 ### Authenticate
 

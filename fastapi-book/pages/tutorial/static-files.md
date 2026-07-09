@@ -4,7 +4,7 @@ title: Static Files - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/static-files
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Static Files
@@ -13,7 +13,7 @@ You can serve static files automatically from a directory using `StaticFiles`.
 
 Tip
 
-If you need to host a frontend, use `app.frontend()` instead, read about it in Frontend.
+If you need to host a frontend, use `app.frontend()` instead, read about it in [Frontend](../frontend/).
 
 `app.frontend()` uses `StaticFiles` underneath, with several additional advantages for frontends, like handling client-side routing.
 
@@ -40,7 +40,7 @@ You could also use `from starlette.staticfiles import StaticFiles`.
 
 This is different from using an `APIRouter` as a mounted application is completely independent. The OpenAPI and docs from your main application won't include anything from the mounted application, etc.
 
-You can read more about this in the Advanced User Guide.
+You can read more about this in the [Advanced User Guide](../../advanced/).
 
 ## Details
 
@@ -54,7 +54,7 @@ All these parameters can be different than "`static`", adjust them to the needs 
 
 ## More info
 
-For more details and options check Starlette's docs about Static Files.
+For more details and options check [Starlette's docs about Static Files](https://www.starlette.dev/staticfiles/).
 
 # Citations
 

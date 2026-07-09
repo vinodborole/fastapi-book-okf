@@ -4,7 +4,7 @@ title: Stream JSON Lines - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/stream-json-lines
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Stream JSON Lines
@@ -68,7 +68,7 @@ You could use this to stream data from an **AI LLM** service, from **logs** or *
 
 Tip
 
-If you want to stream binary data, for example video or audio, check the advanced guide: Stream Data.
+If you want to stream binary data, for example video or audio, check the advanced guide: [Stream Data](../../advanced/stream-data/).
 
 ## Stream JSON Lines with FastAPI
 
@@ -234,7 +234,7 @@ def stream_items_no_async_no_annotation():
 ```
 ### No Return Type
 
-You can also omit the return type. FastAPI will then use the `jsonable_encoder` to convert the data to something that can be serialized to JSON and then send it as JSON Lines.
+You can also omit the return type. FastAPI will then use the [ jsonable_encoder](.././encoder/) to convert the data to something that can be serialized to JSON and then send it as JSON Lines.
 
 ```
 # Code above omitted 👆
@@ -278,7 +278,7 @@ def stream_items_no_async_no_annotation():
 ```
 ## Server-Sent Events (SSE)
 
-FastAPI also has first-class support for Server-Sent Events (SSE), which are quite similar but with a couple of extra details. You can learn about them in the next chapter: Server-Sent Events (SSE). 🤓
+FastAPI also has first-class support for Server-Sent Events (SSE), which are quite similar but with a couple of extra details. You can learn about them in the next chapter: [Server-Sent Events (SSE)](../server-sent-events/). 🤓
 
 # Citations
 

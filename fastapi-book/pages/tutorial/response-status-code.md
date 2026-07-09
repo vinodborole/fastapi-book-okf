@@ -4,7 +4,7 @@ title: Response Status Code - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/response-status-code
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Response Status Code
@@ -32,7 +32,7 @@ The `status_code` parameter receives a number with the HTTP status code.
 
 Note
 
-`status_code` can alternatively also receive an `IntEnum`, such as Python's `http.HTTPStatus`.
+`status_code` can alternatively also receive an `IntEnum`, such as Python's [ http.HTTPStatus](https://docs.python.org/3/library/http.html#http.HTTPStatus).
 
 It will:
 
@@ -71,7 +71,7 @@ In short:
 
 Tip
 
-To know more about each status code and which code is for what, check the MDN documentation about HTTP status codes.
+To know more about each status code and which code is for what, check the [MDN documentation about HTTP status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
 ## Shortcut to remember the names
 
@@ -107,7 +107,7 @@ You could also use `from starlette import status`.
 
 ## Changing the default
 
-Later, in the Advanced User Guide, you will see how to return a different status code than the default you are declaring here.
+Later, in the [Advanced User Guide](../../advanced/response-change-status-code/), you will see how to return a different status code than the default you are declaring here.
 
 # Citations
 

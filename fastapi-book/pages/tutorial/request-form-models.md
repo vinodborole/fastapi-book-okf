@@ -4,7 +4,7 @@ title: Form Models - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/request-form-models
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Form Models
@@ -13,9 +13,9 @@ You can use **Pydantic models** to declare **form fields** in FastAPI.
 
 Note
 
-To use forms, first install `python-multipart`.
+To use forms, first install [ python-multipart](https://github.com/Kludex/python-multipart).
 
-Make sure you create a virtual environment, activate it, and then install it, for example:
+Make sure you create a [virtual environment](../../virtual-environments/), activate it, and then install it, for example:
 
 ```
 $ pip install python-multipart

@@ -4,7 +4,7 @@ title: Body - Nested Models - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/body-nested-models
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Body - Nested Models
@@ -176,7 +176,7 @@ Again, doing just that declaration, with **FastAPI** you get:
 
 Apart from normal singular types like `str`, `int`, `float`, etc. you can use more complex singular types that inherit from `str`.
 
-To see all the options you have, check out Pydantic's Type Overview. You will see some examples in the next chapter.
+To see all the options you have, check out [Pydantic's Type Overview](https://docs.pydantic.dev/latest/concepts/types/). You will see some examples in the next chapter.
 
 For example, as in the `Image` model we have a `url` field, we can declare it to be an instance of Pydantic's `HttpUrl` instead of a `str`:
 

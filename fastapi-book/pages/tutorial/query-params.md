@@ -4,7 +4,7 @@ title: Query Parameters - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/query-params
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Query Parameters
@@ -229,7 +229,7 @@ In this case, there are 3 query parameters:
 
 Tip
 
-You could also use `Enum`s the same way as with Path Parameters.
+You could also use `Enum`s the same way as with [Path Parameters](../path-params/#predefined-values).
 
 # Citations
 

@@ -4,7 +4,7 @@ title: Request Body - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/body
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Request Body
@@ -15,7 +15,7 @@ A **request** body is data sent by the client to your API. A **response** body i
 
 Your API almost always has to send a **response** body. But clients don't necessarily need to send **request bodies** all the time, sometimes they only request a path, maybe with some query parameters, but don't send a body.
 
-To declare a **request** body, you use Pydantic models with all their power and benefits.
+To declare a **request** body, you use [Pydantic](https://docs.pydantic.dev/) models with all their power and benefits.
 
 Note
 
@@ -111,7 +111,7 @@ With just that Python type declaration, **FastAPI** will:
 - Give you the received data in the parameter `item`.- As you declared it in the function to be of type `Item`, you will also have all the editor support (completion, etc) for all of the attributes and their types.
  
 - As you declared it in the function to be of type 
-- Generate JSON Schema definitions for your model, you can also use them anywhere else you like if it makes sense for your project.
+- Generate [JSON Schema](https://json-schema.org)definitions for your model, you can also use them anywhere else you like if it makes sense for your project.
 - Those schemas will be part of the generated OpenAPI schema, and used by the automatic documentation UIs.
 
 ## Automatic docs
@@ -132,13 +132,13 @@ And it was thoroughly tested at the design phase, before any implementation, to 
 
 There were even some changes to Pydantic itself to support this.
 
-The previous screenshots were taken with Visual Studio Code.
+The previous screenshots were taken with [Visual Studio Code](https://code.visualstudio.com).
 
-But you would get the same editor support with PyCharm and most of the other Python editors:
+But you would get the same editor support with [PyCharm](https://www.jetbrains.com/pycharm/) and most of the other Python editors:
 
 Tip
 
-If you use PyCharm as your editor, you can use the Pydantic PyCharm Plugin.
+If you use [PyCharm](https://www.jetbrains.com/pycharm/) as your editor, you can use the [Pydantic PyCharm Plugin](https://github.com/koxudaxi/pydantic-pycharm-plugin/).
 
 It improves editor support for Pydantic models, with:
 
@@ -226,7 +226,7 @@ But adding the type annotations will allow your editor to give you better suppor
 
 ## Without Pydantic
 
-If you don't want to use Pydantic models, you can also use **Body** parameters. See the docs for Body - Multiple Parameters: Singular values in body.
+If you don't want to use Pydantic models, you can also use **Body** parameters. See the docs for [Body - Multiple Parameters: Singular values in body](../body-multiple-params/#singular-values-in-body).
 
 # Citations
 

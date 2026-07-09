@@ -4,7 +4,7 @@ title: Extra Data Types - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/extra-data-types
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Extra Data Types
@@ -47,7 +47,7 @@ Here are some of the additional data types you can use:
 - A Python 
 - `datetime.timedelta`:- A Python `datetime.timedelta`.
 - In requests and responses will be represented as a `float`of total seconds.
-- Pydantic also allows representing it as an "ISO 8601 time diff encoding", see the docs for more info.
+- Pydantic also allows representing it as an "ISO 8601 time diff encoding", [see the docs for more info](https://docs.pydantic.dev/latest/concepts/serialization/#custom-serializers).
  
 - A Python 
 - `frozenset`:- In requests and responses, treated the same as a `set`:- In requests, a list will be read, eliminating duplicates and converting it to a `set`.
@@ -66,7 +66,7 @@ Here are some of the additional data types you can use:
 - In requests and responses, handled the same as a `float`.
  
 - Standard Python 
-- You can check all the valid Pydantic data types here: Pydantic data types.
+- You can check all the valid Pydantic data types here: [Pydantic data types](https://docs.pydantic.dev/latest/usage/types/types/).
 
 ## Example
 

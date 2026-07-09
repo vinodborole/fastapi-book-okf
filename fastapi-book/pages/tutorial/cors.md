@@ -4,12 +4,12 @@ title: CORS (Cross-Origin Resource Sharing) - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/cors
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # CORS (Cross-Origin Resource Sharing)
 
-CORS or "Cross-Origin Resource Sharing" refers to the situations when a frontend running in a browser has JavaScript code that communicates with a backend, and the backend is in a different "origin" than the frontend.
+[CORS or "Cross-Origin Resource Sharing"](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) refers to the situations when a frontend running in a browser has JavaScript code that communicates with a backend, and the backend is in a different "origin" than the frontend.
 
 ## Origin
 
@@ -83,9 +83,9 @@ The following arguments are supported:
 - `allow_origins`- A list of origins that should be permitted to make cross-origin requests. E.g.- `['https://example.org', 'https://www.example.org']`. You can use- `['*']`to allow any origin.
 - `allow_origin_regex`- A regex string to match against origins that should be permitted to make cross-origin requests. e.g.- `'https://.*\.example\.org'`.
 - `allow_methods`- A list of HTTP methods that should be allowed for cross-origin requests. Defaults to- `['GET']`. You can use- `['*']`to allow all standard methods.
-- `allow_headers`- A list of HTTP request headers that should be supported for cross-origin requests. Defaults to- `[]`. You can use- `['*']`to allow all headers. The- `Accept`,- `Accept-Language`,- `Content-Language`and- `Content-Type`headers are always allowed for simple CORS requests.
+- `allow_headers`- A list of HTTP request headers that should be supported for cross-origin requests. Defaults to- `[]`. You can use- `['*']`to allow all headers. The- `Accept`,- `Accept-Language`,- `Content-Language`and- `Content-Type`headers are always allowed for- [simple CORS requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#simple_requests).
 - 
-`allow_credentials`- Indicate that cookies should be supported for cross-origin requests. Defaults to`False`.None of `allow_origins`,`allow_methods`and`allow_headers`can be set to`['*']`if`allow_credentials`is set to`True`. All of them must be explicitly specified.
+`allow_credentials`- Indicate that cookies should be supported for cross-origin requests. Defaults to`False`.None of `allow_origins`,`allow_methods`and`allow_headers`can be set to`['*']`if`allow_credentials`is set to`True`. All of them must be[explicitly specified](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#credentialed_requests_and_wildcards).
 - 
 `expose_headers`- Indicate any response headers that should be made accessible to the browser. Defaults to`[]`.
 - `max_age`- Sets a maximum time in seconds for browsers to cache CORS responses. Defaults to- `600`.
@@ -104,7 +104,7 @@ Any request with an `Origin` header. In this case the middleware will pass the r
 
 ## More info
 
-For more info about CORS, check the Mozilla CORS documentation.
+For more info about CORS, check the [Mozilla CORS documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
 
 Technical Details
 

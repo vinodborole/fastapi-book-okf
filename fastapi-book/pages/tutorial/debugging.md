@@ -4,7 +4,7 @@ title: Debugging - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/debugging
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Debugging
@@ -76,7 +76,7 @@ will not be executed.
 
 Note
 
-For more information, check the official Python docs.
+For more information, check [the official Python docs](https://docs.python.org/3/library/__main__.html).
 
 ## Run your code with your debugger
 

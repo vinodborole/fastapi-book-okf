@@ -4,7 +4,7 @@ title: Request Files - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/request-files
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Request Files
@@ -13,9 +13,9 @@ You can define files to be uploaded by the client using `File`.
 
 Note
 
-To receive uploaded files, first install `python-multipart`.
+To receive uploaded files, first install [ python-multipart](https://github.com/Kludex/python-multipart).
 
-Make sure you create a virtual environment, activate it, and then install it, for example:
+Make sure you create a [virtual environment](../../virtual-environments/), activate it, and then install it, for example:
 
 ```
 $ pip install python-multipart
@@ -140,8 +140,8 @@ Using `UploadFile` has several advantages over `bytes`:
  
 - This means that it will work well for large files like images, videos, large binaries, etc. without consuming all the memory.
 - You can get metadata from the uploaded file.
-- It has a file-like `async`interface.
-- It exposes an actual Python `SpooledTemporaryFile`object that you can pass directly to other libraries that expect a file-like object.
+- It has a [file-like](https://docs.python.org/3/glossary.html#term-file-like-object)`async`interface.
+- It exposes an actual Python `SpooledTemporaryFile`
 
 `UploadFile`
 
@@ -149,7 +149,7 @@ Using `UploadFile` has several advantages over `bytes`:
 
 - `filename`: A- `str`with the original file name that was uploaded (e.g.- `myimage.jpg`).
 - `content_type`: A- `str`with the content type (MIME type / media type) (e.g.- `image/jpeg`).
-- `file`: A- `SpooledTemporaryFile`(a file-like object). This is the actual Python file object that you can pass directly to other functions or libraries that expect a "file-like" object.
+- `file`: A- `SpooledTemporaryFile`- [file-like](https://docs.python.org/3/glossary.html#term-file-like-object)object). This is the actual Python file object that you can pass directly to other functions or libraries that expect a "file-like" object.
 
 `UploadFile` has the following `async` methods. They all call the corresponding file methods underneath (using the internal `SpooledTemporaryFile`).
 
@@ -193,7 +193,7 @@ Data from forms is normally encoded using the "media type" `application/x-www-fo
 
 But when the form includes files, it is encoded as `multipart/form-data`. If you use `File`, **FastAPI** will know it has to get the files from the correct part of the body.
 
-If you want to read more about these encodings and form fields, head to the MDN web docs for `POST`.
+If you want to read more about these encodings and form fields, head to the [MDN web docs for  POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST).
 
 Warning
 

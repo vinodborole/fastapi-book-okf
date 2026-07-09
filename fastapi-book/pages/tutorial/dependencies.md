@@ -4,7 +4,7 @@ title: Dependencies - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/dependencies
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Dependencies
@@ -95,7 +95,7 @@ FastAPI added support for `Annotated` (and started recommending it) in version 0
 
 If you have an older version, you would get errors when trying to use `Annotated`.
 
-Make sure you Upgrade the FastAPI version to at least 0.95.1 before using `Annotated`.
+Make sure you [Upgrade the FastAPI version](../../deployment/versions/#upgrading-the-fastapi-versions) to at least 0.95.1 before using `Annotated`.
 
 ### Import `Depends`
 
@@ -248,9 +248,9 @@ It doesn't matter. **FastAPI** will know what to do.
 
 Note
 
-If you don't know, check the Async: *"In a hurry?"* section about `async` and `await` in the docs.
+If you don't know, check the [Async:  "In a hurry?"](../../async/#in-a-hurry) section about 
 
-## Integrated with OpenAPI
+`async` and `await` in the docs.## Integrated with OpenAPI
 
 All the request declarations, validations and requirements of your dependencies (and sub-dependencies) will be integrated in the same OpenAPI schema.
 

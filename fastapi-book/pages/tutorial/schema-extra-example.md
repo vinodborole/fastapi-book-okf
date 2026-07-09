@@ -4,7 +4,7 @@ title: Declare Request Example Data - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/schema-extra-example
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Declare Request Example Data
@@ -45,7 +45,7 @@ async def update_item(item_id: int, item: Item):
 ```
 That extra info will be added as-is to the output **JSON Schema** for that model, and it will be used in the API docs.
 
-You can use the attribute `model_config` that takes a `dict` as described in Pydantic's docs: Configuration.
+You can use the attribute `model_config` that takes a `dict` as described in [Pydantic's docs: Configuration](https://docs.pydantic.dev/latest/api/config/).
 
 You can set `"json_schema_extra"` with a `dict` containing any additional data you would like to show up in the generated JSON Schema, including `examples`.
 
@@ -416,12 +416,12 @@ JSON Schema didn't have `examples`, so OpenAPI added its own `example` field to 
 
 OpenAPI also added `example` and `examples` fields to other parts of the specification:
 
-- `Parameter Object`(in the specification) that was used by FastAPI's:- `Path()`
+- `Parameter Object`(in the specification)- `Path()`
 - `Query()`
 - `Header()`
 - `Cookie()`
  
-- `Request Body Object`, in the field- `content`, on the- `Media Type Object`(in the specification) that was used by FastAPI's:- `Body()`
+- `Request Body Object`, in the field- `content`, on the- `Media Type Object`(in the specification)- `Body()`
 - `File()`
 - `Form()`
  
@@ -432,7 +432,7 @@ This old OpenAPI-specific `examples` parameter is now `openapi_examples` since F
 
 ### JSON Schema's `examples` field
 
-But then JSON Schema added an `examples` field to a new version of the specification.
+But then JSON Schema added an [ examples](https://json-schema.org/draft/2019-09/json-schema-validation.html#rfc.section.9.5) field to a new version of the specification.
 
 And then the new OpenAPI 3.1.0 was based on the latest version (JSON Schema 2020-12) that included this new field `examples`.
 

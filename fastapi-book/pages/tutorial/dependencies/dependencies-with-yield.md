@@ -4,7 +4,7 @@ title: Dependencies with yield - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-with-yield
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Dependencies with yield
@@ -205,7 +205,7 @@ You can have any combinations of dependencies that you want.
 
 Technical Details
 
-This works thanks to Python's Context Managers.
+This works thanks to Python's [Context Managers](https://docs.python.org/3/library/contextlib.html).
 
 **FastAPI** uses them internally to achieve this.
 
@@ -276,7 +276,7 @@ def get_item(item_id: str, username: str = Depends(get_username)):
         raise OwnerError(username)
     return item
 ```
-If you want to catch exceptions and create a custom response based on that, create a Custom Exception Handler.
+If you want to catch exceptions and create a custom response based on that, create a [Custom Exception Handler](../../handling-errors/#install-custom-exception-handlers).
 
 ## Dependencies with `yield` and `except`
 
@@ -516,7 +516,7 @@ participant operation as Path Operation
 
 Dependencies with `yield` have evolved over time to cover different use cases and fix some issues.
 
-If you want to see what has changed in different versions of FastAPI, you can read more about it in the advanced guide, in Advanced Dependencies - Dependencies with `yield`, `HTTPException`, `except` and Background Tasks.
+If you want to see what has changed in different versions of FastAPI, you can read more about it in the advanced guide, in [Advanced Dependencies - Dependencies with  yield, HTTPException, except and Background Tasks](../../../advanced/advanced-dependencies/#dependencies-with-yield-httpexception-except-and-background-tasks).
 
 ## Context Managers
 
@@ -524,7 +524,7 @@ If you want to see what has changed in different versions of FastAPI, you can re
 
 "Context Managers" are any of those Python objects that you can use in a `with` statement.
 
-For example, you can use `with` to read a file:
+For example, [you can use  with to read a file](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files):
 
 ```
 with open("./somefile.txt") as f:
@@ -545,7 +545,7 @@ This is, more or less, an "advanced" idea.
 
 If you are just starting with **FastAPI** you might want to skip it for now.
 
-In Python, you can create Context Managers by creating a class with two methods: `__enter__()` and `__exit__()`.
+In Python, you can create Context Managers by [creating a class with two methods:  __enter__() and __exit__()](https://docs.python.org/3/reference/datamodel.html#context-managers).
 
 You can also use them inside of **FastAPI** dependencies with `yield` by using
 `with` or `async with` statements inside of the dependency function:

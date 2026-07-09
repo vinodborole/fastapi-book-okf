@@ -4,7 +4,7 @@ title: Tutorial - User Guide - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Tutorial - User Guide
@@ -54,7 +54,7 @@ Using it in your editor is what really shows you the benefits of FastAPI, seeing
 
 The first step is to install FastAPI.
 
-Make sure you create a virtual environment, activate it, and then **install FastAPI**:
+Make sure you create a [virtual environment](../virtual-environments/), activate it, and then **install FastAPI**:
 
 ```
 $ pip install "fastapi[standard]"
@@ -62,7 +62,7 @@ $ pip install "fastapi[standard]"
 ```
 Note
 
-When you install with `pip install "fastapi[standard]"` it comes with some default optional standard dependencies, including `fastapi-cloud-cli`, which allows you to deploy to FastAPI Cloud.
+When you install with `pip install "fastapi[standard]"` it comes with some default optional standard dependencies, including `fastapi-cloud-cli`, which allows you to deploy to [FastAPI Cloud](https://fastapicloud.com).
 
 If you don't want to have those optional dependencies, you can instead install `pip install fastapi`.
 
@@ -70,7 +70,7 @@ If you want to install the standard dependencies but without the `fastapi-cloud-
 
 Tip
 
-FastAPI has an official extension for VS Code (and Cursor), which provides a lot of features, including a path operation explorer, path operation search, CodeLens navigation in tests (jump to definition from tests), and FastAPI Cloud deployment and logs, all from your editor.
+FastAPI has an [official extension for VS Code](https://marketplace.visualstudio.com/items?itemName=FastAPILabs.fastapi-vscode) (and Cursor), which provides a lot of features, including a path operation explorer, path operation search, CodeLens navigation in tests (jump to definition from tests), and FastAPI Cloud deployment and logs, all from your editor.
 
 ## Advanced User Guide
 

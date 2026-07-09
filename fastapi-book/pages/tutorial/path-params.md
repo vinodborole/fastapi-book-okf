@@ -4,7 +4,7 @@ title: Path Parameters - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/path-params
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Path Parameters
@@ -20,7 +20,7 @@ async def read_item(item_id):
 ```
 The value of the path parameter `item_id` will be passed to your function as the argument `item_id`.
 
-So, if you run this example and go to http://127.0.0.1:8000/items/foo, you will see a response of:
+So, if you run this example and go to [http://127.0.0.1:8000/items/foo](http://127.0.0.1:8000/items/foo), you will see a response of:
 
 ```
 {"item_id":"foo"}
@@ -44,7 +44,7 @@ This will give you editor support inside of your function, with error checks, co
 
 ## Data conversion
 
-If you run this example and open your browser at http://127.0.0.1:8000/items/3, you will see a response of:
+If you run this example and open your browser at [http://127.0.0.1:8000/items/3](http://127.0.0.1:8000/items/3), you will see a response of:
 
 ```
 {"item_id":3}
@@ -57,7 +57,7 @@ So, with that type declaration, **FastAPI** gives you automatic request "parsing
 
 ## Data validation
 
-But if you go to the browser at http://127.0.0.1:8000/items/foo, you will see a nice HTTP error of:
+But if you go to the browser at [http://127.0.0.1:8000/items/foo](http://127.0.0.1:8000/items/foo), you will see a nice HTTP error of:
 
 ```
 {
@@ -76,7 +76,7 @@ But if you go to the browser at http://127.0.0.1:8000/items/foo, you will see a 
 ```
 because the path parameter `item_id` had a value of `"foo"`, which is not an `int`.
 
-The same error would appear if you provided a `float` instead of an `int`, as in: http://127.0.0.1:8000/items/4.2
+The same error would appear if you provided a `float` instead of an `int`, as in: [http://127.0.0.1:8000/items/4.2](http://127.0.0.1:8000/items/4.2)
 
 Tip
 
@@ -88,7 +88,7 @@ This is incredibly helpful while developing and debugging code that interacts wi
 
 ## Documentation
 
-And when you open your browser at http://127.0.0.1:8000/docs, you will see an automatic, interactive, API documentation like:
+And when you open your browser at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs), you will see an automatic, interactive, API documentation like:
 
 Tip
 
@@ -98,15 +98,15 @@ Notice that the path parameter is declared to be an integer.
 
 ## Standards-based benefits, alternative documentation
 
-And because the generated schema is from the OpenAPI standard, there are many compatible tools.
+And because the generated schema is from the [OpenAPI](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md) standard, there are many compatible tools.
 
-Because of this, **FastAPI** itself provides an alternative API documentation (using ReDoc), which you can access at http://127.0.0.1:8000/redoc:
+Because of this, **FastAPI** itself provides an alternative API documentation (using ReDoc), which you can access at [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc):
 
 The same way, there are many compatible tools. Including code generation tools for many languages.
 
 ## Pydantic
 
-All the data validation is performed under the hood by Pydantic, so you get all the benefits from it. And you know you are in good hands.
+All the data validation is performed under the hood by [Pydantic](https://docs.pydantic.dev/), so you get all the benefits from it. And you know you are in good hands.
 
 You can use the same type declarations with `str`, `float`, `bool` and many other complex data types.
 

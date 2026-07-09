@@ -4,16 +4,16 @@ title: SQL (Relational) Databases - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/sql-databases
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # SQL (Relational) Databases
 
 **FastAPI** doesn't require you to use a SQL (relational) database. But you can use **any database** that you want.
 
-Here we'll see an example using SQLModel.
+Here we'll see an example using [SQLModel](https://sqlmodel.tiangolo.com/).
 
-**SQLModel** is built on top of SQLAlchemy and Pydantic. It was made by the same author of **FastAPI** to be the perfect match for FastAPI applications that need to use **SQL databases**.
+**SQLModel** is built on top of [SQLAlchemy](https://www.sqlalchemy.org/) and Pydantic. It was made by the same author of **FastAPI** to be the perfect match for FastAPI applications that need to use **SQL databases**.
 
 Tip
 
@@ -33,13 +33,13 @@ Later, for your production application, you might want to use a database server 
 
 Tip
 
-There is an official project generator with **FastAPI** and **PostgreSQL** including a frontend and more tools: https://github.com/fastapi/full-stack-fastapi-template
+There is an official project generator with **FastAPI** and **PostgreSQL** including a frontend and more tools: [https://github.com/fastapi/full-stack-fastapi-template](https://github.com/fastapi/full-stack-fastapi-template)
 
-This is a very simple and short tutorial, if you want to learn about databases in general, about SQL, or more advanced features, go to the SQLModel docs.
+This is a very simple and short tutorial, if you want to learn about databases in general, about SQL, or more advanced features, go to the [SQLModel docs](https://sqlmodel.tiangolo.com/).
 
 ## Install `SQLModel`
 
-First, make sure you create your virtual environment, activate it, and then install `sqlmodel`:
+First, make sure you create your [virtual environment](../../virtual-environments/), activate it, and then install `sqlmodel`:
 
 ```
 $ pip install sqlmodel
@@ -183,7 +183,7 @@ There are a few differences:
 - 
 `table=True`tells SQLModel that this is a*table model*, it should represent a**table**in the SQL database, it's not just a*data model*(as would be any other regular Pydantic class).
 - 
-`Field(primary_key=True)`tells SQLModel that the`id`is the**primary key**in the SQL database (you can learn more about SQL primary keys in the SQLModel docs).**Note:**We use`int | None`for the primary key field so that in Python code we can*create an object without an*(`id``id=None`), assuming the database will*generate it when saving*. SQLModel understands that the database will provide the`id`and*defines the column as a non-null*in the database schema. See SQLModel docs on primary keys for details.`INTEGER`
+`Field(primary_key=True)`tells SQLModel that the`id`is the**primary key**in the SQL database (you can learn more about SQL primary keys in the SQLModel docs).**Note:**We use`int | None`for the primary key field so that in Python code we can*create an object without an*(`id``id=None`), assuming the database will*generate it when saving*. SQLModel understands that the database will provide the`id`and*defines the column as a non-null*in the database schema. See`INTEGER`[SQLModel docs on primary keys](https://sqlmodel.tiangolo.com/tutorial/create-db-and-table/#primary-key-id)for details.
 - 
 `Field(index=True)`tells SQLModel that it should create a**SQL index**for this column, that would allow faster lookups in the database when reading data filtered by this column.SQLModel will know that something declared as `str`will be a SQL column of type`TEXT`(or`VARCHAR`, depending on the database).
 
@@ -693,7 +693,7 @@ For production you would probably use a migration script that runs before you st
 
 Tip
 
-SQLModel will have migration utilities wrapping Alembic, but for now, you can use Alembic directly.
+SQLModel will have migration utilities wrapping Alembic, but for now, you can use [Alembic](https://alembic.sqlalchemy.org/en/latest/) directly.
 
 ### Create a Hero
 
@@ -3021,9 +3021,13 @@ If you go to the `/docs` API UI, you will see that it is now updated, and it won
 
 ## Recap
 
-You can use **SQLModel** to interact with a SQL database and simplify the code with *data models*  and *table models*.
+You can use [ SQLModel](https://sqlmodel.tiangolo.com/) to interact with a SQL database and simplify the code with 
 
-You can learn a lot more at the **SQLModel** docs, there's a longer mini tutorial on using SQLModel with **FastAPI**. 🚀
+*data models*and
+
+*table models*.
+
+You can learn a lot more at the **SQLModel** docs, there's a longer mini [tutorial on using SQLModel with  FastAPI](https://sqlmodel.tiangolo.com/tutorial/fastapi/). 🚀
 
 # Citations
 

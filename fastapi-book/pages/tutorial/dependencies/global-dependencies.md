@@ -4,16 +4,16 @@ title: Global Dependencies - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/dependencies/global-dependencies
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Global Dependencies
 
 For some types of applications you might want to add dependencies to the whole application.
 
-Similar to the way you can add `dependencies` to the *path operation decorators*, you can add them to the `FastAPI` application.
+Similar to the way you can [add  dependencies to the  path operation decorators](../dependencies-in-path-operation-decorators/), you can add them to the 
 
-In that case, they will be applied to all the *path operations* in the application:
+`FastAPI` application.In that case, they will be applied to all the *path operations* in the application:
 
 ```
 from typing import Annotated
@@ -56,11 +56,13 @@ async def read_items():
 async def read_users():
     return [{"username": "Rick"}, {"username": "Morty"}]
 ```
-And all the ideas in the section about adding `dependencies` to the *path operation decorators* still apply, but in this case, to all of the *path operations* in the app.
+And all the ideas in the section about [adding  dependencies to the  path operation decorators](../dependencies-in-path-operation-decorators/) still apply, but in this case, to all of the 
+
+*path operations*in the app.
 
 ## Dependencies for groups of *path operations*
 
-Later, when reading about how to structure bigger applications (Bigger Applications - Multiple Files), possibly with multiple files, you will learn how to declare a single `dependencies` parameter for a group of *path operations*.
+Later, when reading about how to structure bigger applications ([Bigger Applications - Multiple Files](../../../tutorial/bigger-applications/)), possibly with multiple files, you will learn how to declare a single `dependencies` parameter for a group of *path operations*.
 
 # Citations
 

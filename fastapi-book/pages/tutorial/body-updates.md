@@ -4,14 +4,14 @@ title: Body - Updates - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/body-updates
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # Body - Updates
 
 ## Update replacing with `PUT`
 
-To update an item you can use the HTTP `PUT` operation.
+To update an item you can use the [HTTP  PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT) operation.
 
 You can use the `jsonable_encoder` to convert the input data to data that can be stored as JSON (e.g. with a NoSQL database). For example, converting `datetime` to `str`.
 
@@ -59,7 +59,9 @@ And the data would be saved with that "new" `tax` of `10.5`.
 
 ## Partial updates with `PATCH`
 
-You can also use the HTTP `PATCH` operation to *partially* update data.
+You can also use the [HTTP  PATCH](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH) operation to 
+
+*partially*update data.
 
 This means that you can send only the data that you want to update, leaving the rest intact.
 
@@ -201,7 +203,7 @@ Notice that the input model is still validated.
 
 So, if you want to receive partial updates that can omit all the attributes, you need to have a model with all the attributes marked as optional (with default values or `None`).
 
-To distinguish from the models with all optional values for **updates** and models with required values for **creation**, you can use the ideas described in Extra Models.
+To distinguish from the models with all optional values for **updates** and models with required values for **creation**, you can use the ideas described in [Extra Models](../extra-models/).
 
 # Citations
 

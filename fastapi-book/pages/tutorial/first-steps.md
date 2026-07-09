@@ -4,7 +4,7 @@ title: First Steps - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/first-steps
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-09T12:16:48.815563+00:00'
 ---
 
 # First Steps
@@ -56,7 +56,7 @@ That line shows the URL where your app is being served on your local machine.
 
 ### Check it
 
-Open your browser at http://127.0.0.1:8000.
+Open your browser at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 You will see the JSON response as:
 
@@ -65,15 +65,15 @@ You will see the JSON response as:
 ```
 ### Interactive API docs
 
-Now go to http://127.0.0.1:8000/docs.
+Now go to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
-You will see the automatic interactive API documentation (provided by Swagger UI):
+You will see the automatic interactive API documentation (provided by [Swagger UI](https://github.com/swagger-api/swagger-ui)):
 
 ### Alternative API docs
 
-And now, go to http://127.0.0.1:8000/redoc.
+And now, go to [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc).
 
-You will see the alternative automatic documentation (provided by ReDoc):
+You will see the alternative automatic documentation (provided by [ReDoc](https://github.com/Rebilly/ReDoc)):
 
 ### OpenAPI
 
@@ -85,7 +85,7 @@ A "schema" is a definition or description of something. Not the code that implem
 
 #### API "schema"
 
-In this case, OpenAPI is a specification that dictates how to define a schema of your API.
+In this case, [OpenAPI](https://github.com/OAI/OpenAPI-Specification) is a specification that dictates how to define a schema of your API.
 
 This schema definition includes your API paths, the possible parameters they take, etc.
 
@@ -103,7 +103,7 @@ OpenAPI defines an API schema for your API. And that schema includes definitions
 
 If you are curious about what the raw OpenAPI schema looks like, FastAPI automatically generates a JSON (schema) with the descriptions of all your API.
 
-You can see it directly at: http://127.0.0.1:8000/openapi.json.
+You can see it directly at: [http://127.0.0.1:8000/openapi.json](http://127.0.0.1:8000/openapi.json).
 
 It will show a JSON starting with something like:
 
@@ -178,11 +178,11 @@ $ fastapi dev --entrypoint main:app
 ```
 But you would have to remember to pass the correct path\entrypoint every time you call the `fastapi` command.
 
-Additionally, other tools might not be able to find it, for example the VS Code Extension or FastAPI Cloud, so it is recommended to use the `entrypoint` in `pyproject.toml`.
+Additionally, other tools might not be able to find it, for example the [VS Code Extension](../../editor-support/) or [FastAPI Cloud](https://fastapicloud.com), so it is recommended to use the `entrypoint` in `pyproject.toml`.
 
 ### Deploy your app (optional)
 
-You can optionally deploy your FastAPI app to FastAPI Cloud with a single command. 🚀
+You can optionally deploy your FastAPI app to [FastAPI Cloud](https://fastapicloud.com) with a single command. 🚀
 
 ```
 $ fastapi deploy
@@ -211,7 +211,7 @@ Technical Details
 
 `FastAPI` is a class that inherits directly from `Starlette`.
 
-You can use all the Starlette functionality with `FastAPI` too.
+You can use all the [Starlette](https://www.starlette.dev/) functionality with `FastAPI` too.
 
 ### Step 2: create a `FastAPI` "instance"
 
@@ -362,7 +362,7 @@ def root():
 ```
 Note
 
-If you don't know the difference, check the Async: *"In a hurry?"*.
+If you don't know the difference, check the [Async:  "In a hurry?"](../../async/#in-a-hurry).
 
 ### Step 5: return the content
 
@@ -381,11 +381,13 @@ There are many other objects and models that will be automatically converted to 
 
 ### Step 6: Deploy it
 
-Deploy your app to **FastAPI Cloud** with one command: `fastapi deploy`. 🎉
+Deploy your app to ** FastAPI Cloud** with one command: 
 
-#### About FastAPI Cloud
+`fastapi deploy`. 🎉#### About FastAPI Cloud
 
-**FastAPI Cloud** is built by the same author and team behind **FastAPI**.
+** FastAPI Cloud** is built by the same author and team behind 
+
+**FastAPI**.
 
 It streamlines the process of **building**, **deploying**, and **accessing** an API with minimal effort.
 
