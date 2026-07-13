@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://fastapi.tiangolo.com/tutorial",
-  "updated_at": "2026-07-09T12:16:48.852544+00:00",
+  "updated_at": "2026-07-13T09:37:17.505296+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 90,
@@ -418,9 +418,9 @@
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-07-09T12:16:48.841930+00:00",
+    "synced_at": "2026-07-13T09:37:17.494382+00:00",
     "added": 0,
-    "changed": 40,
+    "changed": 0,
     "removed": 0,
     "pages": 51
   }
