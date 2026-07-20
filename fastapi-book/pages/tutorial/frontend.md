@@ -4,7 +4,7 @@ title: Frontend - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/frontend
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-07-20T09:24:18.160848+00:00'
 ---
 
 # Frontend
@@ -65,7 +65,7 @@ from fastapi import FastAPI
 app = FastAPI()
 app.frontend("/", directory="dist", fallback="index.html")
 ```
-**FastAPI** uses this fallback only for `GET` and `HEAD` requests that look like browser navigation. Missing files like JavaScript, CSS, and images still return `404`.
+**FastAPI** uses this fallback only for `GET` and `HEAD` requests that explicitly accept HTML with `Accept: text/html` or `Accept: application/xhtml+xml`, as browser navigation requests normally do. Missing files like JavaScript, CSS, and images still return `404`.
 
 Requests with other methods, like `POST` or `PUT`, to paths that only match the frontend fallback also return `404`. Regular **FastAPI** *path operations* still have higher priority than frontend routes.
 
