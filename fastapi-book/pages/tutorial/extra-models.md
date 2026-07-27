@@ -4,7 +4,7 @@ title: Extra Models - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/extra-models
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # Extra Models
@@ -212,7 +212,7 @@ To do that, use the standard Python type hint [ typing.Union](https://docs.pytho
 
 Note
 
-When defining a [ Union](https://docs.pydantic.dev/latest/concepts/types/#unions), include the most specific type first, followed by the less specific type. In the example below, the more specific 
+When defining a [ Union](https://pydantic.dev/docs/validation/latest/concepts/unions/), include the most specific type first, followed by the less specific type. In the example below, the more specific 
 
 `PlaneItem` comes before `CarItem` in `Union[PlaneItem, CarItem]`.```
 from fastapi import FastAPI

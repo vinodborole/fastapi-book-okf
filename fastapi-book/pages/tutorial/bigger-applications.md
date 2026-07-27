@@ -4,7 +4,7 @@ title: Bigger Applications - Multiple Files - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/bigger-applications
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # Bigger Applications - Multiple Files
@@ -668,7 +668,7 @@ Note
 You could also pass the path to the command, like:
 
 ```
-$ fastapi dev app/main.py
+$ uv run fastapi dev app/main.py
 ```
 But you would have to remember to pass the correct path every time you call the `fastapi` command.
 
@@ -679,7 +679,7 @@ Additionally, other tools might not be able to find it, for example the [VS Code
 Now, run your app:
 
 ```
-$ fastapi dev
+$ uv run fastapi dev
 <span style="color: green;">INFO</span>:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ```
 And open the docs at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).

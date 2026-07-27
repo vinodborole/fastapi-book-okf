@@ -4,7 +4,7 @@ title: Response Model - Return Type - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/response-model
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # Response Model - Return Type
@@ -133,15 +133,15 @@ Note
 
 To use `EmailStr`, first install [ email-validator](https://github.com/JoshData/python-email-validator).
 
-Make sure you create a [virtual environment](../../virtual-environments/), activate it, and then install it, for example:
+Add it to your project:
 
 ```
-$ pip install email-validator
+$ uv add email-validator
 ```
 or with:
 
 ```
-$ pip install "pydantic[email]"
+$ uv add "pydantic[email]"
 ```
 And we are using this model to declare our input and the same model to declare our output:
 
@@ -440,7 +440,7 @@ You can also use:
 - `response_model_exclude_defaults=True`
 - `response_model_exclude_none=True`
 
-as described in [the Pydantic docs](https://docs.pydantic.dev/1.10/usage/exporting_models/#modeldict) for `exclude_defaults` and `exclude_none`.
+as described in [the Pydantic docs](https://pydantic.dev/docs/validation/latest/concepts/serialization/#excluding-and-including-fields-based-on-their-value) for `exclude_defaults` and `exclude_none`.
 
 #### Data with values for fields with defaults
 

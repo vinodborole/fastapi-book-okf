@@ -4,7 +4,7 @@ title: Handling Errors - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/handling-errors
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # Handling Errors
@@ -114,7 +114,7 @@ async def read_item_header(item_id: str):
 ```
 ## Install custom exception handlers
 
-You can add custom exception handlers with [the same exception utilities from Starlette](https://www.starlette.dev/exceptions/).
+You can add custom exception handlers with [the same exception utilities from Starlette](https://starlette.dev/exceptions/).
 
 Let's say you have a custom exception `UnicornException` that you (or a library you use) might `raise`.
 

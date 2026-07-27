@@ -4,7 +4,7 @@ title: Request Body - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/body
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # Request Body
@@ -15,7 +15,7 @@ A **request** body is data sent by the client to your API. A **response** body i
 
 Your API almost always has to send a **response** body. But clients don't necessarily need to send **request bodies** all the time, sometimes they only request a path, maybe with some query parameters, but don't send a body.
 
-To declare a **request** body, you use [Pydantic](https://docs.pydantic.dev/) models with all their power and benefits.
+To declare a **request** body, you use [Pydantic](https://pydantic.dev/docs/) models with all their power and benefits.
 
 Note
 

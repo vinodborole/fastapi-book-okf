@@ -4,7 +4,7 @@ title: Static Files - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/static-files
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # Static Files
@@ -54,7 +54,7 @@ All these parameters can be different than "`static`", adjust them to the needs 
 
 ## More info
 
-For more details and options check [Starlette's docs about Static Files](https://www.starlette.dev/staticfiles/).
+For more details and options check [Starlette's docs about Static Files](https://starlette.dev/staticfiles/).
 
 # Citations
 

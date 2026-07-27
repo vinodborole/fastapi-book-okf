@@ -4,12 +4,12 @@ title: Testing - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/testing
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # Testing
 
-Thanks to [Starlette](https://www.starlette.dev/testclient/), testing **FastAPI** applications is easy and enjoyable.
+Thanks to [Starlette](https://starlette.dev/testclient/), testing **FastAPI** applications is easy and enjoyable.
 
 It is based on [HTTPX](https://www.python-httpx.org), which in turn is designed based on Requests, so it's very familiar and intuitive.
 
@@ -17,15 +17,6 @@ With it, you can use [pytest](https://docs.pytest.org/) directly with **FastAPI*
 
 ## Using `TestClient`
 
-Note
-
-To use `TestClient`, first install [ httpx](https://www.python-httpx.org).
-
-Make sure you create a [virtual environment](../../virtual-environments/), activate it, and then install it, for example:
-
-```
-$ pip install httpx
-```
 Import `TestClient`.
 
 Create a `TestClient` by passing your **FastAPI** application to it.
@@ -344,10 +335,10 @@ If you have a Pydantic model in your test and you want to send its data to the a
 
 After that, you just need to install `pytest`.
 
-Make sure you create a [virtual environment](../../virtual-environments/), activate it, and then install it, for example:
+Add it to your project:
 
 ```
-$ pip install pytest
+$ uv add pytest
 ---> 100%
 ```
 It will detect the files and tests automatically, execute them, and report the results back to you.
@@ -355,7 +346,7 @@ It will detect the files and tests automatically, execute them, and report the r
 Run the tests with:
 
 ```
-$ pytest
+$ uv run pytest
 ================ test session starts ================
 platform linux -- Python 3.6.9, pytest-5.3.5, py-1.8.1, pluggy-0.13.1
 rootdir: /home/user/code/superawesome-cli/app

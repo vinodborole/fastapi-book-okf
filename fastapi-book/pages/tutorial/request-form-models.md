@@ -4,7 +4,7 @@ title: Form Models - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/request-form-models
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # Form Models
@@ -15,10 +15,10 @@ Note
 
 To use forms, first install [ python-multipart](https://github.com/Kludex/python-multipart).
 
-Make sure you create a [virtual environment](../../virtual-environments/), activate it, and then install it, for example:
+Add it to your project:
 
 ```
-$ pip install python-multipart
+$ uv add python-multipart
 ```
 Note
 

@@ -4,7 +4,7 @@ title: Debugging - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/debugging
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # Debugging
@@ -32,7 +32,7 @@ if __name__ == "__main__":
 The main purpose of the `__name__ == "__main__"` is to have some code that is executed when your file is called with:
 
 ```
-$ python myapp.py
+$ uv run python myapp.py
 ```
 but is not called when another file imports it, like in:
 
@@ -46,7 +46,7 @@ Let's say your file is named `myapp.py`.
 If you run it with:
 
 ```
-$ python myapp.py
+$ uv run python myapp.py
 ```
 then the internal variable `__name__` in your file, created automatically by Python, will have as value the string `"__main__"`.
 

@@ -4,7 +4,7 @@ title: Background Tasks - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/background-tasks
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # Background Tasks
@@ -143,7 +143,7 @@ And then another background task generated at the *path operation function* will
 
 ## Technical Details
 
-The class `BackgroundTasks` comes directly from [ starlette.background](https://www.starlette.dev/background/).
+The class `BackgroundTasks` comes directly from [ starlette.background](https://starlette.dev/background/).
 
 It is imported/included directly into FastAPI so that you can import it from `fastapi` and avoid accidentally importing the alternative `BackgroundTask` (without the `s` at the end) from `starlette.background`.
 
@@ -151,7 +151,7 @@ By only using `BackgroundTasks` (and not `BackgroundTask`), it's then possible t
 
 It's still possible to use `BackgroundTask` alone in FastAPI, but you have to create the object in your code and return a Starlette `Response` including it.
 
-You can see more details in [Starlette's official docs for Background Tasks](https://www.starlette.dev/background/).
+You can see more details in [Starlette's official docs for Background Tasks](https://starlette.dev/background/).
 
 ## Caveat
 

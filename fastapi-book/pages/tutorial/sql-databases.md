@@ -4,7 +4,7 @@ title: SQL (Relational) Databases - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/sql-databases
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # SQL (Relational) Databases
@@ -39,10 +39,10 @@ This is a very simple and short tutorial, if you want to learn about databases i
 
 ## Install `SQLModel`
 
-First, make sure you create your [virtual environment](../../virtual-environments/), activate it, and then install `sqlmodel`:
+Add `sqlmodel` to your project:
 
 ```
-$ pip install sqlmodel
+$ uv add sqlmodel
 ---> 100%
 ```
 ## Create the App with a Single Model
@@ -1205,7 +1205,7 @@ def delete_hero(hero_id: int, session: Session = Depends(get_session)):
 You can run the app:
 
 ```
-$ fastapi dev
+$ uv run fastapi dev
 <span style="color: green;">INFO</span>:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ```
 Then go to the `/docs` UI, you will see that **FastAPI** is using these **models** to **document** the API, and it will use them to **serialize** and **validate** the data too.
@@ -3014,7 +3014,7 @@ def delete_hero(hero_id: int, session: Session = Depends(get_session)):
 You can run the app again:
 
 ```
-$ fastapi dev
+$ uv run fastapi dev
 <span style="color: green;">INFO</span>:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ```
 If you go to the `/docs` API UI, you will see that it is now updated, and it won't expect to receive the `id` from the client when creating a hero, etc.

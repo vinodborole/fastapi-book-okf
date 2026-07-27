@@ -4,7 +4,7 @@ title: Security - First Steps - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/security/first-steps
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # Security - First Steps
@@ -62,19 +62,19 @@ The [ python-multipart](https://github.com/Kludex/python-multipart) package is a
 
 **FastAPI**when you run the
 
-`pip install "fastapi[standard]"` command.However, if you use the `pip install fastapi` command, the `python-multipart` package is not included by default.
+`uv add "fastapi[standard]"` command.However, if you use the `uv add fastapi` command, the `python-multipart` package is not included by default.
 
-To install it manually, make sure you create a [virtual environment](../../../virtual-environments/), activate it, and then install it with:
+To install it manually, add it to your project with:
 
 ```
-$ pip install python-multipart
+$ uv add python-multipart
 ```
 This is because **OAuth2** uses "form data" for sending the `username` and `password`.
 
 Run the example with:
 
 ```
-$ fastapi dev
+$ uv run fastapi dev
 <span style="color: green;">INFO</span>:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ```
 ## Check it

@@ -4,7 +4,7 @@ title: Query Parameters and String Validations - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/query-params-str-validations
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # Query Parameters and String Validations
@@ -794,11 +794,11 @@ There could be cases where you need to do some **custom validation** that can't 
 
 In those cases, you can use a **custom validator function** that is applied after the normal validation (e.g. after validating that the value is a `str`).
 
-You can achieve that using [Pydantic's  AfterValidator](https://docs.pydantic.dev/latest/concepts/validators/#field-after-validator) inside of 
+You can achieve that using [Pydantic's  AfterValidator](https://pydantic.dev/docs/validation/latest/concepts/validators/#field-after-validator) inside of 
 
 `Annotated`.Tip
 
-Pydantic also has [ BeforeValidator](https://docs.pydantic.dev/latest/concepts/validators/#field-before-validator) and others. 🤓
+Pydantic also has [ BeforeValidator](https://pydantic.dev/docs/validation/latest/concepts/validators/#field-before-validator) and others. 🤓
 
 For example, this custom validator checks that the item ID starts with `isbn-` for an ISBN book number or with `imdb-` for an IMDB movie URL ID:
 

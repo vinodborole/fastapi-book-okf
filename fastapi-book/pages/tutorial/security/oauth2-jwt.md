@@ -4,7 +4,7 @@ title: OAuth2 with Password (and hashing), Bearer with JWT tokens - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-07-27T10:00:31.905657+00:00'
 ---
 
 # OAuth2 with Password (and hashing), Bearer with JWT tokens
@@ -38,10 +38,10 @@ If you want to play with JWT tokens and see how they work, check [https://jwt.io
 
 We need to install `PyJWT` to generate and verify the JWT tokens in Python.
 
-Make sure you create a [virtual environment](../../../virtual-environments/), activate it, and then install `pyjwt`:
+Add `pyjwt` to your project:
 
 ```
-$ pip install pyjwt
+$ uv add pyjwt
 ---> 100%
 ```
 Note
@@ -72,10 +72,10 @@ It supports many secure hashing algorithms and utilities to work with them.
 
 The recommended algorithm is "Argon2".
 
-Make sure you create a [virtual environment](../../../virtual-environments/), activate it, and then install pwdlib with Argon2:
+Add `pwdlib` with Argon2 to your project:
 
 ```
-$ pip install "pwdlib[argon2]"
+$ uv add "pwdlib[argon2]"
 ---> 100%
 ```
 Tip
