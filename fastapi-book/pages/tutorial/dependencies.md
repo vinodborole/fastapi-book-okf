@@ -4,7 +4,7 @@ title: Dependencies - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/dependencies
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Dependencies
@@ -83,9 +83,9 @@ And it can return anything you want.
 
 In this case, this dependency expects:
 
-- An optional query parameter `q`that is a`str`.
-- An optional query parameter `skip`that is an`int`, and by default is`0`.
-- An optional query parameter `limit`that is an`int`, and by default is`100`.
+- An optional query parameter `q` that is a`str` .
+- An optional query parameter `skip` that is an`int` , and by default is`0` .
+- An optional query parameter `limit` that is an`int` , and by default is`100` .
 
 And then it just returns a `dict` containing those values.
 
@@ -183,7 +183,7 @@ Whenever a new request arrives, **FastAPI** will take care of:
 
 - Calling your dependency ("dependable") function with the correct parameters.
 - Get the result from your function.
-- Assign that result to the parameter in your *path operation function*.
+- Assign that result to the parameter in your *path operation function* .
 
 ```
 graph TB
@@ -234,7 +234,7 @@ But because **FastAPI** is based on the Python standards, including `Annotated`,
 
 The dependencies will keep working as expected, and the **best part** is that the **type information will be preserved**, which means that your editor will be able to keep providing you with **autocompletion**, **inline errors**, etc. The same for other tools like `mypy`.
 
-This will be especially useful when you use it in a **large code base** where you use **the same dependencies** over and over again in **many  path operations**.
+This will be especially useful when you use it in a **large code base** where you use **the same dependencies** over and over again in **many *path operations***.
 
 ## To `async` or not to `async`
 
@@ -248,9 +248,9 @@ It doesn't matter. **FastAPI** will know what to do.
 
 Note
 
-If you don't know, check the [Async:  "In a hurry?"](../../async/#in-a-hurry) section about 
+If you don't know, check the [Async: *"In a hurry?"*](../../async/#in-a-hurry) section about `async` and `await` in the docs.
 
-`async` and `await` in the docs.## Integrated with OpenAPI
+## Integrated with OpenAPI
 
 All the request declarations, validations and requirements of your dependencies (and sub-dependencies) will be integrated in the same OpenAPI schema.
 
@@ -274,7 +274,7 @@ Other common terms for this same idea of "dependency injection" are:
 - injectables
 - components
 
-**FastAPI** plug-ins
+## **FastAPI** plug-ins
 
 Integrations and "plug-ins" can be built using the **Dependency Injection** system. But in fact, there is actually **no need to create "plug-ins"**, as by using dependencies it's possible to declare an infinite number of integrations and interactions that become available to your *path operation functions*.
 
@@ -282,7 +282,7 @@ And dependencies can be created in a very simple and intuitive way that allows y
 
 You will see examples of this in the next chapters, about relational and NoSQL databases, security, etc.
 
-**FastAPI** compatibility
+## **FastAPI** compatibility
 
 The simplicity of the dependency injection system makes **FastAPI** compatible with:
 

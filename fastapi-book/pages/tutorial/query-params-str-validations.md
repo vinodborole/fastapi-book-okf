@@ -4,7 +4,7 @@ title: Query Parameters and String Validations - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/query-params-str-validations
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Query Parameters and String Validations
@@ -39,8 +39,8 @@ We are going to enforce that even though `q` is optional, whenever it is provide
 
 To achieve that, first import:
 
-- `Query`from- `fastapi`
-- `Annotated`from- `typing`
+- `Query` from`fastapi`
+- `Annotated` from`typing`
 
 ```
 from typing import Annotated
@@ -138,9 +138,9 @@ Here we are using `Query()` because this is a **query parameter**. Later we will
 
 FastAPI will now:
 
-- **Validate**the data making sure that the max length is 50 characters
-- Show a **clear error**for the client when the data is not valid
-- **Document**the parameter in the OpenAPI schema- *path operation*(so it will show up in the- **automatic docs UI**)
+- **Validate** the data making sure that the max length is 50 characters
+- Show a **clear error** for the client when the data is not valid
+- **Document** the parameter in the OpenAPI schema*path operation* (so it will show up in the**automatic docs UI** )
 
 ## Alternative (old): `Query` as the default value
 
@@ -196,7 +196,7 @@ q: str | None = Query(default=None, max_length=50)
 ```
 This will validate the data, show a clear error when the data is not valid, and document the parameter in the OpenAPI schema *path operation*.
 
-`Query` as the default value or in `Annotated`
+### `Query` as the default value or in `Annotated`
 
 Keep in mind that when using `Query` inside of `Annotated` you cannot use the `default` parameter for `Query`.
 
@@ -221,9 +221,7 @@ q: str = Query(default="rick")
 ```
 ### Advantages of `Annotated`
 
-**Using  Annotated is recommended** instead of the default value in function parameters, it is 
-
-**better**for multiple reasons. 🤓
+**Using `Annotated` is recommended** instead of the default value in function parameters, it is **better** for multiple reasons. 🤓
 
 The **default** value of the **function parameter** is the **actual default** value, that's more intuitive with Python in general. 😌
 
@@ -307,9 +305,9 @@ async def read_items(
 ```
 This specific regular expression pattern checks that the received parameter value:
 
-- `^`: starts with the following characters, doesn't have characters before.
-- `fixedquery`: has the exact value- `fixedquery`.
-- `$`: ends there, doesn't have any more characters after- `fixedquery`.
+- `^` : starts with the following characters, doesn't have characters before.
+- `fixedquery` : has the exact value`fixedquery` .
+- `$` : ends there, doesn't have any more characters after`fixedquery` .
 
 If you feel lost with all these **"regular expression"** ideas, don't worry. They are a hard topic for many people. You can still do a lot of stuff without needing regular expressions yet.
 
@@ -794,11 +792,11 @@ There could be cases where you need to do some **custom validation** that can't 
 
 In those cases, you can use a **custom validator function** that is applied after the normal validation (e.g. after validating that the value is a `str`).
 
-You can achieve that using [Pydantic's  AfterValidator](https://pydantic.dev/docs/validation/latest/concepts/validators/#field-after-validator) inside of 
+You can achieve that using [Pydantic's `AfterValidator`](https://pydantic.dev/docs/validation/latest/concepts/validators/#field-after-validator) inside of `Annotated`.
 
-`Annotated`.Tip
+Tip
 
-Pydantic also has [ BeforeValidator](https://pydantic.dev/docs/validation/latest/concepts/validators/#field-before-validator) and others. 🤓
+Pydantic also has [`BeforeValidator`](https://pydantic.dev/docs/validation/latest/concepts/validators/#field-before-validator) and others. 🤓
 
 For example, this custom validator checks that the item ID starts with `isbn-` for an ISBN book number or with `imdb-` for an IMDB movie URL ID:
 
@@ -839,7 +837,7 @@ These custom validators are for things that can be checked with **only** the **s
 
 ### Understand that Code
 
-The important point is just using ** AfterValidator with a function inside Annotated**. Feel free to skip this part. 🤸
+The important point is just using **`AfterValidator` with a function inside `Annotated`**. Feel free to skip this part. 🤸
 
 But if you're curious about this specific code example and you're still entertained, here are some extra details.
 

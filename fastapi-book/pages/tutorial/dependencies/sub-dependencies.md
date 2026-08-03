@@ -4,7 +4,7 @@ title: Sub-dependencies - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/dependencies/sub-dependencies
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Sub-dependencies
@@ -109,11 +109,11 @@ async def read_query(query_or_default: str = Depends(query_or_cookie_extractor))
 ```
 Let's focus on the parameters declared:
 
-- Even though this function is a dependency ("dependable") itself, it also declares another dependency (it "depends" on something else).- It depends on the `query_extractor`, and assigns the value returned by it to the parameter`q`.
- 
+- Even though this function is a dependency ("dependable") itself, it also declares another dependency (it "depends" on something else).
+  - It depends on the `query_extractor` , and assigns the value returned by it to the parameter`q` .
 - It depends on the 
-- It also declares an optional `last_query`cookie, as a`str`.- If the user didn't provide any query `q`, we use the last query used, which we saved to a cookie before.
- 
+- It also declares an optional `last_query` cookie, as a`str` .
+  - If the user didn't provide any query `q` , we use the last query used, which we saved to a cookie before.
 - If the user didn't provide any query 
 
 ## Use the dependency

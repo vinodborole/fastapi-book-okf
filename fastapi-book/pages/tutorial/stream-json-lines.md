@@ -4,7 +4,7 @@ title: Stream JSON Lines - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/stream-json-lines
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Stream JSON Lines
@@ -234,7 +234,7 @@ def stream_items_no_async_no_annotation():
 ```
 ### No Return Type
 
-You can also omit the return type. FastAPI will then use the [ jsonable_encoder](.././encoder/) to convert the data to something that can be serialized to JSON and then send it as JSON Lines.
+You can also omit the return type. FastAPI will then use the [`jsonable_encoder`](.././encoder/) to convert the data to something that can be serialized to JSON and then send it as JSON Lines.
 
 ```
 # Code above omitted 👆

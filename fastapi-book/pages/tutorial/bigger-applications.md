@@ -4,7 +4,7 @@ title: Bigger Applications - Multiple Files - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/bigger-applications
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Bigger Applications - Multiple Files
@@ -46,14 +46,14 @@ For example, in `app/main.py` you could have a line like:
 ```
 from app.routers import items
 ```
-- The `app`directory contains everything. And it has an empty file`app/__init__.py`, so it is a "Python package" (a collection of "Python modules"):`app`.
-- It contains an `app/main.py`file. As it is inside a Python package (a directory with a file`__init__.py`), it is a "module" of that package:`app.main`.
-- There's also an `app/dependencies.py`file, just like`app/main.py`, it is a "module":`app.dependencies`.
-- There's a subdirectory `app/routers/`with another file`__init__.py`, so it's a "Python subpackage":`app.routers`.
-- The file `app/routers/items.py`is inside a package,`app/routers/`, so, it's a submodule:`app.routers.items`.
-- The same with `app/routers/users.py`, it's another submodule:`app.routers.users`.
-- There's also a subdirectory `app/internal/`with another file`__init__.py`, so it's another "Python subpackage":`app.internal`.
-- And the file `app/internal/admin.py`is another submodule:`app.internal.admin`.
+- The `app` directory contains everything. And it has an empty file`app/__init__.py` , so it is a "Python package" (a collection of "Python modules"):`app` .
+- It contains an `app/main.py` file. As it is inside a Python package (a directory with a file`__init__.py` ), it is a "module" of that package:`app.main` .
+- There's also an `app/dependencies.py` file, just like`app/main.py` , it is a "module":`app.dependencies` .
+- There's a subdirectory `app/routers/` with another file`__init__.py` , so it's a "Python subpackage":`app.routers` .
+- The file `app/routers/items.py` is inside a package,`app/routers/` , so, it's a submodule:`app.routers.items` .
+- The same with `app/routers/users.py` , it's another submodule:`app.routers.users` .
+- There's also a subdirectory `app/internal/` with another file`__init__.py` , so it's another "Python subpackage":`app.internal` .
+- And the file `app/internal/admin.py` is another submodule:`app.internal.admin` .
 
 The same file structure with comments:
 
@@ -71,7 +71,7 @@ The same file structure with comments:
 │       ├── __init__.py  # makes "internal" a "Python subpackage"
 │       └── admin.py     # "admin" submodule, e.g. import app.internal.admin
 ```
-`APIRouter`
+## `APIRouter`
 
 Let's say the file dedicated to handling just users is the submodule at `/app/routers/users.py`.
 
@@ -98,7 +98,7 @@ async def read_user_me():
 async def read_user(username: str):
     return {"username": username}
 ```
-*Path operations* with `APIRouter`
+### *Path operations* with `APIRouter`
 
 And then you use it to declare your *path operations*.
 
@@ -168,10 +168,10 @@ But we want to be smarter and simplify the code a bit.
 
 We know all the *path operations* in this module have the same:
 
-- Path `prefix`:`/items`.
-- `tags`: (just one tag:- `items`).
-- Extra `responses`.
-- `dependencies`: they all need that- `X-Token`dependency we created.
+- Path `prefix` :`/items` .
+- `tags` : (just one tag:`items` ).
+- Extra `responses` .
+- `dependencies` : they all need that`X-Token` dependency we created.
 
 So, instead of adding all that to each *path operation*, we can add it to the `APIRouter`.
 
@@ -222,9 +222,7 @@ And we can add a list of `dependencies` that will be added to all the *path oper
 
 Tip
 
-Note that, much like [dependencies in  path operation decorators](../dependencies/dependencies-in-path-operation-decorators/), no value will be passed to your 
-
-*path operation function*.
+Note that, much like [dependencies in *path operation decorators*](../dependencies/dependencies-in-path-operation-decorators/), no value will be passed to your *path operation function*.
 
 The end result is that the item paths are now:
 
@@ -233,13 +231,13 @@ The end result is that the item paths are now:
 
 ...as we intended.
 
-- They will be marked with a list of tags that contain a single string `"items"`.- These "tags" are especially useful for the automatic interactive documentation systems (using OpenAPI).
- 
-- All of them will include the predefined `responses`.
-- All these *path operations*will have the list of`dependencies`evaluated/executed before them.- If you also declare dependencies in a specific *path operation*,**they will be executed too**.
-- The router dependencies are executed first, then the `dependencies`in the decorator
-- You can also add `Security`dependencies with`scopes`
- 
+- They will be marked with a list of tags that contain a single string `"items"` .
+  - These "tags" are especially useful for the automatic interactive documentation systems (using OpenAPI).
+- All of them will include the predefined `responses` .
+- All these *path operations* will have the list of`dependencies` evaluated/executed before them.
+  - If you also declare dependencies in a specific *path operation* ,**they will be executed too** .
+  - The router dependencies are executed first, then the [`dependencies` in the decorator](../dependencies/dependencies-in-path-operation-decorators/) , and then the normal parameter dependencies.
+  - You can also add [`Security` dependencies with `scopes`](../../advanced/security/oauth2-scopes/) .
 - If you also declare dependencies in a specific 
 
 Tip
@@ -301,9 +299,9 @@ from .dependencies import get_token_header
 ```
 would mean:
 
-- Starting in the same package that this module (the file `app/routers/items.py`) lives in (the directory`app/routers/`)...
-- find the module `dependencies`(an imaginary file at`app/routers/dependencies.py`)...
-- and from it, import the function `get_token_header`.
+- Starting in the same package that this module (the file `app/routers/items.py` ) lives in (the directory`app/routers/` )...
+- find the module `dependencies` (an imaginary file at`app/routers/dependencies.py` )...
+- and from it, import the function `get_token_header` .
 
 But that file doesn't exist, our dependencies are in a file at `app/dependencies.py`.
 
@@ -316,10 +314,10 @@ from ..dependencies import get_token_header
 ```
 mean:
 
-- Starting in the same package that this module (the file `app/routers/items.py`) lives in (the directory`app/routers/`)...
-- go to the parent package (the directory `app/`)...
-- and in there, find the module `dependencies`(the file at`app/dependencies.py`)...
-- and from it, import the function `get_token_header`.
+- Starting in the same package that this module (the file `app/routers/items.py` ) lives in (the directory`app/routers/` )...
+- go to the parent package (the directory `app/` )...
+- and in there, find the module `dependencies` (the file at`app/dependencies.py` )...
+- and from it, import the function `get_token_header` .
 
 That works correctly! 🎉
 
@@ -330,11 +328,11 @@ from ...dependencies import get_token_header
 ```
 that would mean:
 
-- Starting in the same package that this module (the file `app/routers/items.py`) lives in (the directory`app/routers/`)...
-- go to the parent package (the directory `app/`)...
-- then go to the parent of that package (there's no parent package, `app`is the top level 😱)...
-- and in there, find the module `dependencies`(the file at`app/dependencies.py`)...
-- and from it, import the function `get_token_header`.
+- Starting in the same package that this module (the file `app/routers/items.py` ) lives in (the directory`app/routers/` )...
+- go to the parent package (the directory `app/` )...
+- then go to the parent of that package (there's no parent package, `app` is the top level 😱)...
+- and in there, find the module `dependencies` (the file at`app/dependencies.py` )...
+- and from it, import the function `get_token_header` .
 
 That would refer to some package above `app/`, with its own file `__init__.py`, etc. But we don't have that. So, that would throw an error in our example. 🚨
 
@@ -451,9 +449,9 @@ from .routers import items, users
 ```
 means:
 
-- Starting in the same package that this module (the file `app/main.py`) lives in (the directory`app/`)...
-- look for the subpackage `routers`(the directory at`app/routers/`)...
-- and from it, import the submodule `items`(the file at`app/routers/items.py`) and`users`(the file at`app/routers/users.py`)...
+- Starting in the same package that this module (the file `app/main.py` ) lives in (the directory`app/` )...
+- look for the subpackage `routers` (the directory at`app/routers/` )...
+- and from it, import the submodule `items` (the file at`app/routers/items.py` ) and`users` (the file at`app/routers/users.py` )...
 
 The module `items` will have a variable `router` (`items.router`). This is the same one we created in the file `app/routers/items.py`, it's an `APIRouter` object.
 
@@ -602,10 +600,10 @@ That way, the original `APIRouter` will stay unmodified, so we can still share t
 
 The result is that in our app, each of the *path operations* from the `admin` module will have:
 
-- The prefix `/admin`.
-- The tag `admin`.
-- The dependency `get_token_header`.
-- The response `418`. 🍵
+- The prefix `/admin` .
+- The tag `admin` .
+- The dependency `get_token_header` .
+- The response `418` . 🍵
 
 But that will only affect that `APIRouter` in our app, not in any other code that uses it.
 

@@ -4,7 +4,7 @@ title: Extra Data Types - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/extra-data-types
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Extra Data Types
@@ -30,43 +30,43 @@ And you will still have the same features as seen up to now:
 
 Here are some of the additional data types you can use:
 
-- `UUID`:- A standard "Universally Unique Identifier", common as an ID in many databases and systems.
-- In requests and responses will be represented as a `str`.
- 
-- `datetime.datetime`:- A Python `datetime.datetime`.
-- In requests and responses will be represented as a `str`in ISO 8601 format, like:`2008-09-15T15:53:00+05:00`.
- 
+- `UUID` :
+  - A standard "Universally Unique Identifier", common as an ID in many databases and systems.
+  - In requests and responses will be represented as a `str` .
+- `datetime.datetime` :
+  - A Python `datetime.datetime` .
+  - In requests and responses will be represented as a `str` in ISO 8601 format, like:`2008-09-15T15:53:00+05:00` .
 - A Python 
-- `datetime.date`:- Python `datetime.date`.
-- In requests and responses will be represented as a `str`in ISO 8601 format, like:`2008-09-15`.
- 
+- `datetime.date` :
+  - Python `datetime.date` .
+  - In requests and responses will be represented as a `str` in ISO 8601 format, like:`2008-09-15` .
 - Python 
-- `datetime.time`:- A Python `datetime.time`.
-- In requests and responses will be represented as a `str`in ISO 8601 format, like:`14:23:55.003`.
- 
+- `datetime.time` :
+  - A Python `datetime.time` .
+  - In requests and responses will be represented as a `str` in ISO 8601 format, like:`14:23:55.003` .
 - A Python 
-- `datetime.timedelta`:- A Python `datetime.timedelta`.
-- In requests and responses will be represented as a `float`of total seconds.
-- Pydantic also allows representing it as an "ISO 8601 time diff encoding", [see the docs for more info](https://pydantic.dev/docs/validation/latest/concepts/serialization/#custom-serializers).
- 
+- `datetime.timedelta` :
+  - A Python `datetime.timedelta` .
+  - In requests and responses will be represented as a `float` of total seconds.
+  - Pydantic also allows representing it as an "ISO 8601 time diff encoding", [see the docs for more info](https://pydantic.dev/docs/validation/latest/concepts/serialization/#custom-serializers) .
 - A Python 
-- `frozenset`:- In requests and responses, treated the same as a `set`:- In requests, a list will be read, eliminating duplicates and converting it to a `set`.
-- In responses, the `set`will be converted to a`list`.
-- The generated schema will specify that the `set`values are unique (using JSON Schema's`uniqueItems`).
- 
-- In requests, a list will be read, eliminating duplicates and converting it to a 
- 
+- `frozenset` :
+  - In requests and responses, treated the same as a `set` :
+    - In requests, a list will be read, eliminating duplicates and converting it to a `set` .
+    - In responses, the `set` will be converted to a`list` .
+    - The generated schema will specify that the `set` values are unique (using JSON Schema's`uniqueItems` ).
+  - In requests, a list will be read, eliminating duplicates and converting it to a 
 - In requests and responses, treated the same as a 
-- `bytes`:- Standard Python `bytes`.
-- In requests and responses will be treated as `str`.
-- The generated schema will specify that it's a `str`with`binary`"format".
- 
+- `bytes` :
+  - Standard Python `bytes` .
+  - In requests and responses will be treated as `str` .
+  - The generated schema will specify that it's a `str` with`binary` "format".
 - Standard Python 
-- `Decimal`:- Standard Python `Decimal`.
-- In requests and responses, handled the same as a `float`.
- 
+- `Decimal` :
+  - Standard Python `Decimal` .
+  - In requests and responses, handled the same as a `float` .
 - Standard Python 
-- You can check all the valid Pydantic data types here: [Pydantic data types](https://pydantic.dev/docs/validation/latest/concepts/types/).
+- You can check all the valid Pydantic data types here: [Pydantic data types](https://pydantic.dev/docs/validation/latest/concepts/types/) .
 
 ## Example
 

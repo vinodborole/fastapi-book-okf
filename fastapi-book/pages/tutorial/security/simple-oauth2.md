@@ -4,7 +4,7 @@ title: Simple OAuth2 with Password and Bearer - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/security/simple-oauth2
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Simple OAuth2 with Password and Bearer
@@ -27,7 +27,7 @@ But for the login *path operation*, we need to use these names to be compatible 
 
 The spec also states that the `username` and `password` must be sent as form data (so, no JSON here).
 
-`scope`
+### `scope`
 
 The spec also says that the client can send another form field "`scope`".
 
@@ -37,9 +37,9 @@ Each "scope" is just a string (without spaces).
 
 They are normally used to declare specific security permissions, for example:
 
-- `users:read`or- `users:write`are common examples.
-- `instagram_basic`is used by Facebook / Instagram.
-- `https://www.googleapis.com/auth/drive`is used by Google.
+- `users:read` or`users:write` are common examples.
+- `instagram_basic` is used by Facebook / Instagram.
+- `https://www.googleapis.com/auth/drive` is used by Google.
 
 Note
 
@@ -55,7 +55,7 @@ For OAuth2 they are just strings.
 
 Now let's use the utilities provided by **FastAPI** to handle this.
 
-`OAuth2PasswordRequestForm`
+### `OAuth2PasswordRequestForm`
 
 First, import `OAuth2PasswordRequestForm`, and use it as a dependency with `Depends` in the *path operation* for `/token`:
 
@@ -206,10 +206,10 @@ async def read_users_me(current_user: User = Depends(get_current_active_user)):
 ```
 `OAuth2PasswordRequestForm` is a class dependency that declares a form body with:
 
-- The `username`.
-- The `password`.
-- An optional `scope`field as a big string, composed of strings separated by spaces.
-- An optional `grant_type`.
+- The `username` .
+- The `password` .
+- An optional `scope` field as a big string, composed of strings separated by spaces.
+- An optional `grant_type` .
 
 Tip
 
@@ -217,8 +217,8 @@ The OAuth2 spec actually *requires* a field `grant_type` with a fixed value of `
 
 If you need to enforce it, use `OAuth2PasswordRequestFormStrict` instead of `OAuth2PasswordRequestForm`.
 
-- An optional `client_id`(we don't need it for our example).
-- An optional `client_secret`(we don't need it for our example).
+- An optional `client_id` (we don't need it for our example).
+- An optional `client_secret` (we don't need it for our example).
 
 Note
 
@@ -562,7 +562,7 @@ async def read_users_me(current_user: User = Depends(get_current_active_user)):
 
 `UserInDB(**user_dict)` means:
 
-*Pass the keys and values of the  user_dict directly as key-value arguments, equivalent to:*
+*Pass the keys and values of the `user_dict` directly as key-value arguments, equivalent to:*
 
 ```
 UserInDB(
@@ -575,7 +575,7 @@ UserInDB(
 ```
 Note
 
-For a more complete explanation of `**user_dict` check back in [the documentation for  Extra Models](../../extra-models/#about-user-in-model-dump).
+For a more complete explanation of `**user_dict` check back in [the documentation for **Extra Models**](../../extra-models/#about-user-in-model-dump).
 
 ## Return the token
 

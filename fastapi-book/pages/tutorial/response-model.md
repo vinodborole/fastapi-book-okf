@@ -4,7 +4,7 @@ title: Response Model - Return Type - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/response-model
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Response Model - Return Type
@@ -35,22 +35,22 @@ async def read_items() -> list[Item]:
 ```
 FastAPI will use this return type to:
 
-- **Validate**the returned data.- If the data is invalid (e.g. you are missing a field), it means that *your*app code is broken, not returning what it should, and it will return a server error instead of returning incorrect data. This way you and your clients can be certain that they will receive the data and the data shape expected.
- 
+- **Validate** the returned data.
+  - If the data is invalid (e.g. you are missing a field), it means that *your* app code is broken, not returning what it should, and it will return a server error instead of returning incorrect data. This way you and your clients can be certain that they will receive the data and the data shape expected.
 - If the data is invalid (e.g. you are missing a field), it means that 
-- Add a **JSON Schema**for the response, in the OpenAPI*path operation*.- This will be used by the **automatic docs**.
-- It will also be used by automatic client code generation tools.
- 
+- Add a **JSON Schema** for the response, in the OpenAPI*path operation* .
+  - This will be used by the **automatic docs** .
+  - It will also be used by automatic client code generation tools.
 - This will be used by the 
-- **Serialize**the returned data to JSON using Pydantic, which is written in- **Rust**, so it will be- **much faster**.
+- **Serialize** the returned data to JSON using Pydantic, which is written in**Rust** , so it will be**much faster** .
 
 But most importantly:
 
-- It will **limit and filter**the output data to what is defined in the return type.- This is particularly important for **security**, we'll see more of that below.
- 
+- It will **limit and filter** the output data to what is defined in the return type.
+  - This is particularly important for **security** , we'll see more of that below.
 - This is particularly important for 
 
-`response_model` Parameter
+## `response_model` Parameter
 
 There are some cases where you need or want to return some data that is not exactly what the type declares.
 
@@ -103,7 +103,7 @@ If you have strict type checks in your editor, mypy, etc, you can declare the fu
 
 That way you tell the editor that you are intentionally returning anything. But FastAPI will still do the data documentation, validation, filtering, etc. with the `response_model`.
 
-`response_model` Priority
+### `response_model` Priority
 
 If you declare both a return type and a `response_model`, the `response_model` will take priority and be used by FastAPI.
 
@@ -131,7 +131,7 @@ async def create_user(user: UserIn) -> UserIn:
 ```
 Note
 
-To use `EmailStr`, first install [ email-validator](https://github.com/JoshData/python-email-validator).
+To use `EmailStr`, first install [`email-validator`](https://github.com/JoshData/python-email-validator).
 
 Add it to your project:
 
@@ -233,7 +233,7 @@ async def create_user(user: UserIn) -> Any:
 ```
 So, **FastAPI** will take care of filtering out all the data that is not declared in the output model (using Pydantic).
 
-`response_model` or Return Type
+### `response_model` or Return Type
 
 In this case, because the two models are different, if we annotated the function return type as `UserOut`, the editor and tools would complain that we are returning an invalid type, as those are different classes.
 
@@ -392,9 +392,9 @@ items = {
 async def read_item(item_id: str):
     return items[item_id]
 ```
-- `description: Union[str, None] = None`(or- `str | None = None`in Python 3.10) has a default of- `None`.
-- `tax: float = 10.5`has a default of- `10.5`.
-- `tags: List[str] = []`has a default of an empty list:- `[]`.
+- `description: Union[str, None] = None` (or`str | None = None` in Python 3.10) has a default of`None` .
+- `tax: float = 10.5` has a default of`10.5` .
+- `tags: List[str] = []` has a default of an empty list:`[]` .
 
 but you might want to omit them from the result if they were not actually stored.
 
@@ -479,7 +479,7 @@ Notice that the default values can be anything, not only `None`.
 
 They can be a list (`[]`), a `float` of `10.5`, etc.
 
-`response_model_include` and `response_model_exclude`
+### `response_model_include` and `response_model_exclude`
 
 You can also use the *path operation decorator* parameters `response_model_include` and `response_model_exclude`.
 

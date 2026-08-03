@@ -4,7 +4,7 @@ title: Static Files - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/static-files
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Static Files
@@ -19,8 +19,8 @@ If you need to host a frontend, use `app.frontend()` instead, read about it in [
 
 ## Use `StaticFiles`
 
-- Import `StaticFiles`.
-- "Mount" a `StaticFiles()`instance in a specific path.
+- Import `StaticFiles` .
+- "Mount" a `StaticFiles()` instance in a specific path.
 
 ```
 from fastapi import FastAPI

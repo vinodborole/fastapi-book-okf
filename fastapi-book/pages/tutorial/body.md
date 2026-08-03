@@ -4,7 +4,7 @@ title: Request Body - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/body
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Request Body
@@ -106,12 +106,12 @@ With just that Python type declaration, **FastAPI** will:
 
 - Read the body of the request as JSON.
 - Convert the corresponding types (if needed).
-- Validate the data.- If the data is invalid, it will return a nice and clear error, indicating exactly where and what was the incorrect data.
- 
-- Give you the received data in the parameter `item`.- As you declared it in the function to be of type `Item`, you will also have all the editor support (completion, etc) for all of the attributes and their types.
- 
+- Validate the data.
+  - If the data is invalid, it will return a nice and clear error, indicating exactly where and what was the incorrect data.
+- Give you the received data in the parameter `item` .
+  - As you declared it in the function to be of type `Item` , you will also have all the editor support (completion, etc) for all of the attributes and their types.
 - As you declared it in the function to be of type 
-- Generate [JSON Schema](https://json-schema.org)definitions for your model, you can also use them anywhere else you like if it makes sense for your project.
+- Generate [JSON Schema](https://json-schema.org) definitions for your model, you can also use them anywhere else you like if it makes sense for your project.
 - Those schemas will be part of the generated OpenAPI schema, and used by the automatic documentation UIs.
 
 ## Automatic docs
@@ -212,9 +212,9 @@ async def update_item(item_id: int, item: Item, q: str | None = None):
 ```
 The function parameters will be recognized as follows:
 
-- If the parameter is also declared in the **path**, it will be used as a path parameter.
-- If the parameter is of a **singular type**(like`int`,`float`,`str`,`bool`, etc) it will be interpreted as a**query**parameter.
-- If the parameter is declared to be of the type of a **Pydantic model**, it will be interpreted as a request**body**.
+- If the parameter is also declared in the **path** , it will be used as a path parameter.
+- If the parameter is of a **singular type** (like`int` ,`float` ,`str` ,`bool` , etc) it will be interpreted as a**query** parameter.
+- If the parameter is declared to be of the type of a **Pydantic model** , it will be interpreted as a request**body** .
 
 Note
 

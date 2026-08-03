@@ -4,7 +4,7 @@ title: Metadata and Docs URLs - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/metadata
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Metadata and Docs URLs
@@ -15,15 +15,15 @@ You can customize several metadata configurations in your **FastAPI** applicatio
 
 You can set the following fields that are used in the OpenAPI specification and the automatic API docs UIs:
 
-| Parameter | Type | Description | ||||||||||||
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| `title` | `str` | The title of the API. | ||||||||||||
-| `summary` | `str` | A short summary of the API. Available since OpenAPI 3.1.0, FastAPI 0.99.0. | ||||||||||||
-| `description` | `str` | A short description of the API. It can use Markdown. | ||||||||||||
-| `version` | `str` | The version of the API. This is the version of your own application, not of OpenAPI. For example `2.5.0`. | ||||||||||||
-| `terms_of_service` | `str` | A URL to the Terms of Service for the API. If provided, this has to be a URL. | ||||||||||||
-| `contact` | `dict` | The contact information for the exposed API. It can contain several fields. 
- | 
+| Parameter | Type | Description | 
+|---|---|---|
+| `title` | `str` | The title of the API. | 
+| `summary` | `str` | A short summary of the API. Available since OpenAPI 3.1.0, FastAPI 0.99.0. | 
+| `description` | `str` | A short description of the API. It can use Markdown. | 
+| `version` | `str` | The version of the API. This is the version of your own application, not of OpenAPI. For example `2.5.0` . | 
+| `terms_of_service` | `str` | A URL to the Terms of Service for the API. If provided, this has to be a URL. | 
+| `contact` | `dict` | The contact information for the exposed API. It can contain several fields. `contact` fields | 
+| `license_info` | `dict` | The license information for the exposed API. It can contain several fields. `license_info` fields | 
 
 | Parameter | Type | Description | 
 |---|---|---|
@@ -31,12 +31,10 @@ You can set the following fields that are used in the OpenAPI specification and 
 | `url` | `str` | The URL pointing to the contact information. MUST be in the format of a URL. | 
 | `email` | `str` | The email address of the contact person/organization. MUST be in the format of an email address. | 
 
-`license_info``dict``license_info` fields
-
 | Parameter | Type | Description | 
 |---|---|---|
-| `name` | `str` | REQUIRED(if a`license_info`is set). The license name used for the API. | 
-| `identifier` | `str` | An [SPDX](https://spdx.org/licenses/)license expression for the API. The`identifier`field is mutually exclusive of the`url`field. Available since OpenAPI 3.1.0, FastAPI 0.99.0. | 
+| `name` | `str` | **REQUIRED** (if a`license_info` is set). The license name used for the API. | 
+| `identifier` | `str` | An [SPDX](https://spdx.org/licenses/) license expression for the API. The`identifier` field is mutually exclusive of the`url` field. Available since OpenAPI 3.1.0, FastAPI 0.99.0. | 
 | `url` | `str` | A URL to the license used for the API. MUST be in the format of a URL. | 
 
 You can set them as follows:
@@ -123,11 +121,11 @@ It takes a list containing one dictionary for each tag.
 
 Each dictionary can contain:
 
-- `name`(- **required**): a- `str`with the same tag name you use in the- `tags`parameter in your- *path operations*and- `APIRouter`s.
-- `description`: a- `str`with a short description for the tag. It can have Markdown and will be shown in the docs UI.
-- `externalDocs`: a- `dict`describing external documentation with:- `description`: a- `str`with a short description for the external docs.
-- `url`(- **required**): a- `str`with the URL for the external documentation.
- 
+- `name` (**required** ): a`str` with the same tag name you use in the`tags` parameter in your*path operations* and`APIRouter` s.
+- `description` : a`str` with a short description for the tag. It can have Markdown and will be shown in the docs UI.
+- `externalDocs` : a`dict` describing external documentation with:
+  - `description` : a`str` with a short description for the external docs.
+  - `url` (**required** ): a`str` with the URL for the external documentation.
 
 ### Create metadata for tags
 
@@ -228,13 +226,13 @@ If you want to disable the OpenAPI schema completely you can set `openapi_url=No
 
 You can configure the two documentation user interfaces included:
 
-- **Swagger UI**: served at- `/docs`.- You can set its URL with the parameter `docs_url`.
-- You can disable it by setting `docs_url=None`.
- 
+- **Swagger UI** : served at`/docs` .
+  - You can set its URL with the parameter `docs_url` .
+  - You can disable it by setting `docs_url=None` .
 - You can set its URL with the parameter 
-- **ReDoc**: served at- `/redoc`.- You can set its URL with the parameter `redoc_url`.
-- You can disable it by setting `redoc_url=None`.
- 
+- **ReDoc** : served at`/redoc` .
+  - You can set its URL with the parameter `redoc_url` .
+  - You can disable it by setting `redoc_url=None` .
 - You can set its URL with the parameter 
 
 For example, to set Swagger UI to be served at `/documentation` and disable ReDoc:

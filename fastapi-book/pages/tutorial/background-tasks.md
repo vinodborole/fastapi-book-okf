@@ -4,7 +4,7 @@ title: Background Tasks - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/background-tasks
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Background Tasks
@@ -15,10 +15,10 @@ This is useful for operations that need to happen after a request, but that the 
 
 This includes, for example:
 
-- Email notifications sent after performing an action:- As connecting to an email server and sending an email tends to be "slow" (several seconds), you can return the response right away and send the email notification in the background.
- 
-- Processing data:- For example, let's say you receive a file that must go through a slow process, you can return a response of "Accepted" (HTTP 202) and process the file in the background.
- 
+- Email notifications sent after performing an action:
+  - As connecting to an email server and sending an email tends to be "slow" (several seconds), you can return the response right away and send the email notification in the background.
+- Processing data:
+  - For example, let's say you receive a file that must go through a slow process, you can return a response of "Accepted" (HTTP 202) and process the file in the background.
 
 ## Using `BackgroundTasks`
 
@@ -80,9 +80,9 @@ async def send_notification(email: str, background_tasks: BackgroundTasks):
 ```
 `.add_task()` receives as arguments:
 
-- A task function to be run in the background (`write_notification`).
-- Any sequence of arguments that should be passed to the task function in order (`email`).
-- Any keyword arguments that should be passed to the task function (`message="some notification"`).
+- A task function to be run in the background (`write_notification` ).
+- Any sequence of arguments that should be passed to the task function in order (`email` ).
+- Any keyword arguments that should be passed to the task function (`message="some notification"` ).
 
 ## Dependency Injection
 
@@ -143,7 +143,7 @@ And then another background task generated at the *path operation function* will
 
 ## Technical Details
 
-The class `BackgroundTasks` comes directly from [ starlette.background](https://starlette.dev/background/).
+The class `BackgroundTasks` comes directly from [`starlette.background`](https://starlette.dev/background/).
 
 It is imported/included directly into FastAPI so that you can import it from `fastapi` and avoid accidentally importing the alternative `BackgroundTask` (without the `s` at the end) from `starlette.background`.
 

@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://fastapi.tiangolo.com/tutorial",
-  "updated_at": "2026-07-27T10:00:31.930375+00:00",
+  "updated_at": "2026-08-03T09:55:10.324031+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 90,
@@ -16,19 +16,19 @@
       "path": "pages/tutorial.md",
       "url": "https://fastapi.tiangolo.com/tutorial",
       "title": "Tutorial - User Guide - FastAPI",
-      "hash": "4a3fcd8bff604ef9aaebc127c5e8c1957041580e4e43c545e146394d883c625c"
+      "hash": "44a9916686ee74393d6661a2620a87b323ba233c9a7aae95d72851dc48dfa290"
     },
     {
       "path": "pages/tutorial/background-tasks.md",
       "url": "https://fastapi.tiangolo.com/tutorial/background-tasks",
       "title": "Background Tasks - FastAPI",
-      "hash": "3287d970806d7c0cb8aa54a5e2f1f9f89bf15a73c9624a74f3749d56a7fbd749"
+      "hash": "36ce6f45d9a550727acaf016fa7bfc95fb691ce8174fc779b6c8890ca9202283"
     },
     {
       "path": "pages/tutorial/bigger-applications.md",
       "url": "https://fastapi.tiangolo.com/tutorial/bigger-applications",
       "title": "Bigger Applications - Multiple Files - FastAPI",
-      "hash": "e179a384f73c825c838aa3b1c607746334f723e5e863d7ad06f84f52f2de6dcc"
+      "hash": "abc82e4929ee569194bc854d06a7a4c1ac65ff1e5858203c0e8337f41e0ee0a6"
     },
     {
       "path": "pages/tutorial/body-fields.md",
@@ -52,13 +52,13 @@
       "path": "pages/tutorial/body-updates.md",
       "url": "https://fastapi.tiangolo.com/tutorial/body-updates",
       "title": "Body - Updates - FastAPI",
-      "hash": "fdc71eca4f16c16dbc31953b40242b8906f51f7df52de82bf29c4049eee2291a"
+      "hash": "0ecd79538b77575952792f1775ec3c0849dd7d5cb65b320095c9306e7d912af1"
     },
     {
       "path": "pages/tutorial/body.md",
       "url": "https://fastapi.tiangolo.com/tutorial/body",
       "title": "Request Body - FastAPI",
-      "hash": "35883c5c3a8fa620a6d369f96d9546093ac1e72efdb765a62024a0ea3659bf11"
+      "hash": "611abc95c6df6fb30f9afeb7feb667bcb18758620a309b56ff681f70ee325b12"
     },
     {
       "path": "pages/tutorial/cookie-param-models.md",
@@ -76,25 +76,25 @@
       "path": "pages/tutorial/cors.md",
       "url": "https://fastapi.tiangolo.com/tutorial/cors",
       "title": "CORS (Cross-Origin Resource Sharing) - FastAPI",
-      "hash": "04cc3236f7417a6da3245ca6de477b712e43d17098547b36339b35f51ac30e2f"
+      "hash": "ea0ca5e7b9cbc25b0ea1824c1a9d23400adf33ba97ea1c0d7cc86297c61b56fd"
     },
     {
       "path": "pages/tutorial/debugging.md",
       "url": "https://fastapi.tiangolo.com/tutorial/debugging",
       "title": "Debugging - FastAPI",
-      "hash": "868bcf6d30ccd68d0c468a6aff40e39cb5edc6ff6331c2361fc0b1a2e896a83b"
+      "hash": "3f3a4ba39f1c2c856b85ade284ee5f2678d13d666ca2c6e8859f50be27cae33f"
     },
     {
       "path": "pages/tutorial/dependencies.md",
       "url": "https://fastapi.tiangolo.com/tutorial/dependencies",
       "title": "Dependencies - FastAPI",
-      "hash": "6feff97265e5c0cd80417a7944c15a0197a911329ab02015a98e44b74fe476bc"
+      "hash": "7cd88b305c85a0cd3bfd1e81b3562228a400e6e1f8fc3bd7f8a775cbfe7eb8ea"
     },
     {
       "path": "pages/tutorial/dependencies/classes-as-dependencies.md",
       "url": "https://fastapi.tiangolo.com/tutorial/dependencies/classes-as-dependencies",
       "title": "Classes as Dependencies - FastAPI",
-      "hash": "e939c6098bbdab03f24fecc46d74d4a1487ce73b5aa533fcf93f05db4b88dfc8"
+      "hash": "ca910eafbce2d63a19f3b2f2cd6338a7b4aa1cfd73e413d9fd275c651225dc37"
     },
     {
       "path": "pages/tutorial/dependencies/dependencies-in-path-operation-decorators.md",
@@ -106,49 +106,49 @@
       "path": "pages/tutorial/dependencies/dependencies-with-yield.md",
       "url": "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-with-yield",
       "title": "Dependencies with yield - FastAPI",
-      "hash": "75ac5d9f12bda35542556b51240c95740fe07fcf8377999a59c269767b1ed1e4"
+      "hash": "00457d2230c87b0b8258a46e7b060b75312d6431f44043816fa3ef609b9c2b00"
     },
     {
       "path": "pages/tutorial/dependencies/global-dependencies.md",
       "url": "https://fastapi.tiangolo.com/tutorial/dependencies/global-dependencies",
       "title": "Global Dependencies - FastAPI",
-      "hash": "e03e494b04905f45f14c3dd63a60914490953e4f4f6fdef21b308f28f86d91a1"
+      "hash": "147d13dfbc199e0edb056d3c18189be6734572f6c1c7d578d19958d031adcf4f"
     },
     {
       "path": "pages/tutorial/dependencies/sub-dependencies.md",
       "url": "https://fastapi.tiangolo.com/tutorial/dependencies/sub-dependencies",
       "title": "Sub-dependencies - FastAPI",
-      "hash": "49db78c7f5c981d39280cd8d34bcc38fc7a9a6346d31e8d506be71cb6a2d4823"
+      "hash": "651da13e84123a86945a317e6ec78fc3afd109e252998b68ba25b6847f864dce"
     },
     {
       "path": "pages/tutorial/encoder.md",
       "url": "https://fastapi.tiangolo.com/tutorial/encoder",
       "title": "JSON Compatible Encoder - FastAPI",
-      "hash": "0a8db065fc37eb532ca84f37e6f48c6bfcb0e63877382cd62692fa3f47c847bb"
+      "hash": "8ac89689d8687338c1ad10ffde7f5db30fcec26067cc0b01fc827572b4385eef"
     },
     {
       "path": "pages/tutorial/extra-data-types.md",
       "url": "https://fastapi.tiangolo.com/tutorial/extra-data-types",
       "title": "Extra Data Types - FastAPI",
-      "hash": "0c8b1e46925c21a5f17875422c1fea77237e7762ea70ebfa52e73cbeb5120da7"
+      "hash": "3582577f38d85a08b5704dce703f9abdbe290a6a279150c030a2791493d461bf"
     },
     {
       "path": "pages/tutorial/extra-models.md",
       "url": "https://fastapi.tiangolo.com/tutorial/extra-models",
       "title": "Extra Models - FastAPI",
-      "hash": "cdab17a108136ac5a3621cfef6985f4d23e430de4701ba02f36382714150f70e"
+      "hash": "fb05bf003c202677422d6cf0a8b5637fea7789bbdaf205936c34142ca6699fe8"
     },
     {
       "path": "pages/tutorial/first-steps.md",
       "url": "https://fastapi.tiangolo.com/tutorial/first-steps",
       "title": "First Steps - FastAPI",
-      "hash": "aee09ea38d2698e16bc71bc99d98f27d7e874c6122fdc3b5a49a66ffa4a0dcfb"
+      "hash": "690be785267d2725da02a01465580d194df6bc99bb56e789adb2786668f7fe4d"
     },
     {
       "path": "pages/tutorial/frontend.md",
       "url": "https://fastapi.tiangolo.com/tutorial/frontend",
       "title": "Frontend - FastAPI",
-      "hash": "fbdef88ef4de3b6a8439d8ced682550401659aef67e7fe5fddc91e58f278bc49"
+      "hash": "5ac15f4aae2d7f02b8877753c2057d1c29729cab462fc479dc55082b5b71ae24"
     },
     {
       "path": "pages/tutorial/handling-errors.md",
@@ -172,13 +172,13 @@
       "path": "pages/tutorial/metadata.md",
       "url": "https://fastapi.tiangolo.com/tutorial/metadata",
       "title": "Metadata and Docs URLs - FastAPI",
-      "hash": "149416fa9e1ff31aeb371095f1b279cfc4355a4f5fa7e7d67f9e325a602f70cd"
+      "hash": "7fcda1243217e026eac8ee4df2e24127b8c891c7179d68fb61e2c485ecb6d101"
     },
     {
       "path": "pages/tutorial/middleware.md",
       "url": "https://fastapi.tiangolo.com/tutorial/middleware",
       "title": "Middleware - FastAPI",
-      "hash": "54179f1bb5ec3c2b9159cd8b585059cbb3a74334b60cfbea61f62e2494e69c72"
+      "hash": "66613c943112b3788b474cf7ba0bb55fc04472f3843f6844bccfe7deaa890d11"
     },
     {
       "path": "pages/tutorial/path-operation-configuration.md",
@@ -190,7 +190,7 @@
       "path": "pages/tutorial/path-params-numeric-validations.md",
       "url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations",
       "title": "Path Parameters and Numeric Validations - FastAPI",
-      "hash": "145910dae2e9f2d1e6ac34dd4bd97440328a3d6fe5de8f8e21908e74df94a546"
+      "hash": "3e968f5b534f23146f07f09926c3403e47441713a25241e81d1650a7c5b4f703"
     },
     {
       "path": "pages/tutorial/path-params.md",
@@ -208,67 +208,67 @@
       "path": "pages/tutorial/query-params-str-validations.md",
       "url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations",
       "title": "Query Parameters and String Validations - FastAPI",
-      "hash": "aafd93a126e15cd936905452412f6b8ffe0111fe530a0eba95fdbb0eadcc24cf"
+      "hash": "11916aef0024e200c36f2853f0f6180f97a02283da77ba656c87d51da1847024"
     },
     {
       "path": "pages/tutorial/query-params.md",
       "url": "https://fastapi.tiangolo.com/tutorial/query-params",
       "title": "Query Parameters - FastAPI",
-      "hash": "e2f28d4fb8421c3d616faf4331653a8099671604c21ced16e2ba41ac3911d627"
+      "hash": "616750659dd944e51a86ac22a7931eeffb0ae87e06cd8971777c13e2c132cabd"
     },
     {
       "path": "pages/tutorial/request-files.md",
       "url": "https://fastapi.tiangolo.com/tutorial/request-files",
       "title": "Request Files - FastAPI",
-      "hash": "6f1a8a6273ae2bdf384e53b17cbd193d5f8d30e2058ec38ea153ca03431b5147"
+      "hash": "3b6f2b1d7c2a7339b529c2986abfdae9b41b46d9ba0edd651cb46735fbe6c221"
     },
     {
       "path": "pages/tutorial/request-form-models.md",
       "url": "https://fastapi.tiangolo.com/tutorial/request-form-models",
       "title": "Form Models - FastAPI",
-      "hash": "4913da1d1af363a0943c05d302c168ffc7b2bf164bff460e47cd3213b8ec3fbc"
+      "hash": "a478765e3873f5b37e86447404542eb6a145458c4a3bc0656328d727d002ab9b"
     },
     {
       "path": "pages/tutorial/request-forms-and-files.md",
       "url": "https://fastapi.tiangolo.com/tutorial/request-forms-and-files",
       "title": "Request Forms and Files - FastAPI",
-      "hash": "55cf391f2d8bcea498341ab0bab4ec2a331fdce17870fa7a896d989aa6a174e7"
+      "hash": "1fa9eb25424ad99749991d000a49fd0f1f5cb7ad4bedf37606d8a8bd9531d2fe"
     },
     {
       "path": "pages/tutorial/request-forms.md",
       "url": "https://fastapi.tiangolo.com/tutorial/request-forms",
       "title": "Form Data - FastAPI",
-      "hash": "f7e835d9e2f6f0f8b6c7f97a9a92a0b9384aec79c963585667e17ffe60b34445"
+      "hash": "fca48f444a9092cea89adf57801205c568ce8a68d5aa105c7313eba6cc66dd21"
     },
     {
       "path": "pages/tutorial/response-model.md",
       "url": "https://fastapi.tiangolo.com/tutorial/response-model",
       "title": "Response Model - Return Type - FastAPI",
-      "hash": "8e14fba8e9b9b9c4d4629f529feadef9f8dd5fbeb2d7d5c4d03b02dd8922a1d3"
+      "hash": "8bd6d7d7745a38ad8e9b18d05fc62a331d32679f1ba8a0580a807dba8fe00e72"
     },
     {
       "path": "pages/tutorial/response-status-code.md",
       "url": "https://fastapi.tiangolo.com/tutorial/response-status-code",
       "title": "Response Status Code - FastAPI",
-      "hash": "080389dff2ed7856f7cea4093408e03a7cf0e3e624934963bc3cb6320843defe"
+      "hash": "543ab4f63a6c83c322c8660e9ca0d045455421051b232c5d5f4accf7b3258aa8"
     },
     {
       "path": "pages/tutorial/schema-extra-example.md",
       "url": "https://fastapi.tiangolo.com/tutorial/schema-extra-example",
       "title": "Declare Request Example Data - FastAPI",
-      "hash": "ed289c9b2b9ca63276f14016003590bf0a2ff92f8fc6caade9755428a95c293e"
+      "hash": "001cee8d677cfaa0867e03d6e3fdcb253ce4bab5e2d390a605f40888955f0935"
     },
     {
       "path": "pages/tutorial/security.md",
       "url": "https://fastapi.tiangolo.com/tutorial/security",
       "title": "Security - FastAPI",
-      "hash": "898d03af63108c2c41db4070398435d5fde0448261a65f41b09cc0e074c14b21"
+      "hash": "e157c10566b7ff2f861000a0cb6db5f6dce24c96475510d29d4e7d6faaa36a18"
     },
     {
       "path": "pages/tutorial/security/first-steps.md",
       "url": "https://fastapi.tiangolo.com/tutorial/security/first-steps",
       "title": "Security - First Steps - FastAPI",
-      "hash": "9a0f200a821a8b1f29a195030bc336e2555b6bf17492d8996417952fa1b1facf"
+      "hash": "bb130d5346c639b6861132e935e4c05cdb5da8c172d067d855445eadf20d515f"
     },
     {
       "path": "pages/tutorial/security/get-current-user.md",
@@ -286,37 +286,37 @@
       "path": "pages/tutorial/security/simple-oauth2.md",
       "url": "https://fastapi.tiangolo.com/tutorial/security/simple-oauth2",
       "title": "Simple OAuth2 with Password and Bearer - FastAPI",
-      "hash": "7c38bf8a5d9a66bbf255868e333c93d489d7ffa5117ea47d2c327c04237988de"
+      "hash": "80b5e80d06925ae5c8ca3d5473ae2abdc51ca8fc6cdf5d78aea92b59acdfa71f"
     },
     {
       "path": "pages/tutorial/server-sent-events.md",
       "url": "https://fastapi.tiangolo.com/tutorial/server-sent-events",
       "title": "Server-Sent Events (SSE) - FastAPI",
-      "hash": "dcc9b1f6946a452d19b013f636d3e3e431c14387c8e01c29aa3687377b5721aa"
+      "hash": "201c4797e3533062499071aacb73021bcb2e789a17fada72b376e3aa967f4382"
     },
     {
       "path": "pages/tutorial/sql-databases.md",
       "url": "https://fastapi.tiangolo.com/tutorial/sql-databases",
       "title": "SQL (Relational) Databases - FastAPI",
-      "hash": "a6b1d1dea49a286539206cc67b6c1f562e2e3bb76586455db3e7f499b205db5b"
+      "hash": "0a53c691cf736aa2b95b0a757bd16c6a1ab645f49859cefe8b5bef6cf65fef5e"
     },
     {
       "path": "pages/tutorial/static-files.md",
       "url": "https://fastapi.tiangolo.com/tutorial/static-files",
       "title": "Static Files - FastAPI",
-      "hash": "180a6ad98d2830d84cd0295edc59e98dbcf823ff687cfe4a8ed865cd0bbd396b"
+      "hash": "7e838f01dfa3318bad70817190a52e78e014bcdd45efe6189573e5da680eec28"
     },
     {
       "path": "pages/tutorial/stream-json-lines.md",
       "url": "https://fastapi.tiangolo.com/tutorial/stream-json-lines",
       "title": "Stream JSON Lines - FastAPI",
-      "hash": "3a243a20e84333410f7355fccbdc81f02eeab27fc614c79ac7d681c6e314cdec"
+      "hash": "cbffd015d9deecb287db06b63fc2152b108a4029d2018c6b21910e801e5abb55"
     },
     {
       "path": "pages/tutorial/testing.md",
       "url": "https://fastapi.tiangolo.com/tutorial/testing",
       "title": "Testing - FastAPI",
-      "hash": "97c82f2c263a618f2984ddc407972ee27b4aee9a399aef4112efd34fd62d43ce"
+      "hash": "385d46f4a18a419fa64c48edc5be99d0ebda9dd56811cb873c01b1b96dea15b8"
     }
   ],
   "edges": [
@@ -418,9 +418,9 @@
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-07-27T10:00:31.921372+00:00",
+    "synced_at": "2026-08-03T09:55:10.315730+00:00",
     "added": 0,
-    "changed": 24,
+    "changed": 37,
     "removed": 0,
     "pages": 51
   }

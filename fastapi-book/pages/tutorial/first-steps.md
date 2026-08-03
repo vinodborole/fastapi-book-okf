@@ -4,7 +4,7 @@ title: First Steps - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/first-steps
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # First Steps
@@ -168,7 +168,7 @@ which would be equivalent to:
 ```
 from backend.main import app
 ```
-`fastapi dev` with path or with `--entrypoint` CLI option
+### `fastapi dev` with path or with `--entrypoint` CLI option
 
 You can also pass the file path to the `fastapi dev` command, and it will guess the FastAPI app object to use:
 
@@ -276,10 +276,10 @@ When building APIs, you normally use these specific HTTP methods to perform a sp
 
 Normally you use:
 
-- `POST`: to create data.
-- `GET`: to read data.
-- `PUT`: to update data.
-- `DELETE`: to delete data.
+- `POST` : to create data.
+- `GET` : to read data.
+- `PUT` : to update data.
+- `DELETE` : to delete data.
 
 So, in OpenAPI, each of the HTTP methods is called an "operation".
 
@@ -297,7 +297,7 @@ async def root():
 The `@app.get("/")` tells **FastAPI** that the function right below is in charge of handling requests that go to:
 
 - the path `/`
-- using a `get`operation
+- using a `get` operation
 
 `@decorator` Info
 
@@ -338,9 +338,9 @@ For example, when using GraphQL you normally perform all the actions using only 
 
 This is our "**path operation function**":
 
-- **path**: is- `/`.
-- **operation**: is- `get`.
-- **function**: is the function below the "decorator" (below- `@app.get("/")`).
+- **path** : is`/` .
+- **operation** : is`get` .
+- **function** : is the function below the "decorator" (below`@app.get("/")` ).
 
 ```
 from fastapi import FastAPI
@@ -366,7 +366,7 @@ def root():
 ```
 Note
 
-If you don't know the difference, check the [Async:  "In a hurry?"](../../async/#in-a-hurry).
+If you don't know the difference, check the [Async: *"In a hurry?"*](../../async/#in-a-hurry).
 
 ### Step 5: return the content
 
@@ -385,13 +385,11 @@ There are many other objects and models that will be automatically converted to 
 
 ### Step 6: Deploy it
 
-Deploy your app to ** FastAPI Cloud** with one command: 
+Deploy your app to **[FastAPI Cloud](https://fastapicloud.com)** with one command: `fastapi deploy`. 🎉
 
-`fastapi deploy`. 🎉#### About FastAPI Cloud
+#### About FastAPI Cloud
 
-** FastAPI Cloud** is built by the same author and team behind 
-
-**FastAPI**.
+**[FastAPI Cloud](https://fastapicloud.com)** is built by the same author and team behind **FastAPI**.
 
 It streamlines the process of **building**, **deploying**, and **accessing** an API with minimal effort.
 
@@ -407,12 +405,12 @@ Follow your cloud provider's guides to deploy FastAPI apps with them. 🤓
 
 ## Recap
 
-- Import `FastAPI`.
-- Create an `app`instance.
-- Write a **path operation decorator**using decorators like`@app.get("/")`.
-- Define a **path operation function**; for example,`def root(): ...`.
-- Run the development server using the command `fastapi dev`.
-- Optionally deploy your app with `fastapi deploy`.
+- Import `FastAPI` .
+- Create an `app` instance.
+- Write a **path operation decorator** using decorators like`@app.get("/")` .
+- Define a **path operation function** ; for example,`def root(): ...` .
+- Run the development server using the command `fastapi dev` .
+- Optionally deploy your app with `fastapi deploy` .
 
 # Citations
 

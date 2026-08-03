@@ -4,7 +4,7 @@ title: Tutorial - User Guide - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Tutorial - User Guide
@@ -54,7 +54,7 @@ Using it in your editor is what really shows you the benefits of FastAPI, seeing
 
 The first step is to set up your project and add FastAPI.
 
-Install [ uv](https://docs.astral.sh/uv/getting-started/installation/), then create a project and add FastAPI:
+Install [`uv`](https://docs.astral.sh/uv/getting-started/installation/), then create a project and add FastAPI:
 
 ```
 $ uv init awesome-project --bare
@@ -66,9 +66,9 @@ $ uv add "fastapi[standard]"
 
 ## What these commands do
 
-- `uv init`: create a new Python project.
-- `awesome-project`: create the project in a new directory with this name.
-- `--bare`: create only the minimal- `pyproject.toml`file, without generating a sample- `main.py`,- `README.md`, or other files. You will create the application files yourself in the next steps of this tutorial.
+- `uv init` : create a new Python project.
+- `awesome-project` : create the project in a new directory with this name.
+- `--bare` : create only the minimal`pyproject.toml` file, without generating a sample`main.py` ,`README.md` , or other files. You will create the application files yourself in the next steps of this tutorial.
 
 Then `cd awesome-project` enters the new project directory before adding FastAPI.
 
@@ -76,9 +76,9 @@ Then `cd awesome-project` enters the new project directory before adding FastAPI
 
 When you run `uv add`, it selects compatible versions of FastAPI and all the packages FastAPI depends on. It records the exact versions in `uv.lock`, making it possible to install the same package versions later on another computer or when deploying the application.
 
-Creating or updating this file is called [ locking the project dependencies](https://docs.astral.sh/uv/concepts/projects/sync/). 
+Creating or updating this file is called [**locking** the project dependencies](https://docs.astral.sh/uv/concepts/projects/sync/). `uv` does this automatically when you add a package.
 
-`uv` does this automatically when you add a package.## FastAPI installation options
+## FastAPI installation options
 
 When you install with `uv add "fastapi[standard]"` it comes with some default optional standard dependencies, including `fastapi-cloud-cli`, which allows you to deploy to [FastAPI Cloud](https://fastapicloud.com).
 

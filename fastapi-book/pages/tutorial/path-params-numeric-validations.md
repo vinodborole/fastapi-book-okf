@@ -4,7 +4,7 @@ title: Path Parameters and Numeric Validations - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Path Parameters and Numeric Validations
@@ -185,8 +185,8 @@ Here's a **small trick** that can be handy, but you won't need it often.
 
 If you want to:
 
-- declare the `q`query parameter without a`Query`nor any default value
-- declare the path parameter `item_id`using`Path`
+- declare the `q` query parameter without a`Query` nor any default value
+- declare the path parameter `item_id` using`Path`
 - have them in a different order
 - not use `Annotated`
 
@@ -295,8 +295,8 @@ async def read_items(
 
 The same applies for:
 
-- `gt`:- `g`reater- `t`han
-- `le`:- `l`ess than or- `e`qual
+- `gt` :`g` reater`t` han
+- `le` :`l` ess than or`e` qual
 
 ```
 from typing import Annotated
@@ -389,10 +389,10 @@ With `Query`, `Path` (and others you haven't seen yet) you can declare metadata 
 
 And you can also declare numeric validations:
 
-- `gt`:- `g`reater- `t`han
-- `ge`:- `g`reater than or- `e`qual
-- `lt`:- `l`ess- `t`han
-- `le`:- `l`ess than or- `e`qual
+- `gt` :`g` reater`t` han
+- `ge` :`g` reater than or`e` qual
+- `lt` :`l` ess`t` han
+- `le` :`l` ess than or`e` qual
 
 Note
 

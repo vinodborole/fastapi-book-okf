@@ -4,7 +4,7 @@ title: Classes as Dependencies - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/dependencies/classes-as-dependencies
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Classes as Dependencies
@@ -227,9 +227,9 @@ Those parameters are what **FastAPI** will use to "solve" the dependency.
 
 In both cases, it will have:
 
-- An optional `q`query parameter that is a`str`.
-- A `skip`query parameter that is an`int`, with a default of`0`.
-- A `limit`query parameter that is an`int`, with a default of`100`.
+- An optional `q` query parameter that is a`str` .
+- A `skip` query parameter that is an`int` , with a default of`0` .
+- A `limit` query parameter that is an`int` , with a default of`100` .
 
 In both cases the data will be converted, validated, documented on the OpenAPI schema, etc.
 

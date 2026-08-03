@@ -4,7 +4,7 @@ title: Declare Request Example Data - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/schema-extra-example
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Declare Request Example Data
@@ -63,7 +63,7 @@ Before that, it only supported the keyword `example` with a single example. That
 
 You can read more at the end of this page.
 
-`Field` additional arguments
+## `Field` additional arguments
 
 When using `Field()` with Pydantic models, you can also declare additional `examples`:
 
@@ -81,7 +81,7 @@ async def update_item(item_id: int, item: Item):
     results = {"item_id": item_id, "item": item}
     return results
 ```
-`examples` in JSON Schema - OpenAPI
+## `examples` in JSON Schema - OpenAPI
 
 When using any of:
 
@@ -95,7 +95,7 @@ When using any of:
 
 you can also declare a group of `examples` with additional information that will be added to their **JSON Schemas** inside of **OpenAPI**.
 
-`Body` with `examples`
+### `Body` with `examples`
 
 Here we pass `examples` containing one example of the data expected in `Body()`:
 
@@ -165,7 +165,7 @@ async def update_item(
 
 With any of the methods above it would look like this in the `/docs`:
 
-`Body` with multiple `examples`
+### `Body` with multiple `examples`
 
 You can of course also pass multiple `examples`:
 
@@ -257,7 +257,7 @@ Nevertheless, at the time of writing this, Swagger UI, the tool in charge of sho
 
 Since before **JSON Schema** supported `examples`, OpenAPI had support for a different field also called `examples`.
 
-This **OpenAPI-specific** `examples` goes in another section in the OpenAPI specification. It goes in the **details for each  path operation**, not inside each JSON Schema.
+This **OpenAPI-specific** `examples` goes in another section in the OpenAPI specification. It goes in the **details for each *path operation***, not inside each JSON Schema.
 
 And Swagger UI has supported this particular `examples` field for a while. So, you can use it to **show** different **examples in the docs UI**.
 
@@ -281,10 +281,10 @@ The keys of the `dict` identify each example, and each value is another `dict`.
 
 Each specific example `dict` in the `examples` can contain:
 
-- `summary`: Short description for the example.
-- `description`: A long description that can contain Markdown text.
-- `value`: This is the actual example shown, e.g. a- `dict`.
-- `externalValue`: alternative to- `value`, a URL pointing to the example. Although this might not be supported by as many tools as- `value`.
+- `summary` : Short description for the example.
+- `description` : A long description that can contain Markdown text.
+- `value` : This is the actual example shown, e.g. a`dict` .
+- `externalValue` : alternative to`value` , a URL pointing to the example. Although this might not be supported by as many tools as`value` .
 
 You can use it like this:
 
@@ -416,15 +416,15 @@ JSON Schema didn't have `examples`, so OpenAPI added its own `example` field to 
 
 OpenAPI also added `example` and `examples` fields to other parts of the specification:
 
-- `Parameter Object`(in the specification)- `Path()`
-- `Query()`
-- `Header()`
-- `Cookie()`
- 
-- `Request Body Object`, in the field- `content`, on the- `Media Type Object`(in the specification)- `Body()`
-- `File()`
-- `Form()`
- 
+- [`Parameter Object` (in the specification)](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#parameter-object) that was used by FastAPI's:
+  - `Path()`
+  - `Query()`
+  - `Header()`
+  - `Cookie()`
+- [`Request Body Object`, in the field `content`, on the `Media Type Object` (in the specification)](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#media-type-object) that was used by FastAPI's:
+  - `Body()`
+  - `File()`
+  - `Form()`
 
 Note
 
@@ -432,13 +432,13 @@ This old OpenAPI-specific `examples` parameter is now `openapi_examples` since F
 
 ### JSON Schema's `examples` field
 
-But then JSON Schema added an [ examples](https://json-schema.org/draft/2019-09/json-schema-validation.html#rfc.section.9.5) field to a new version of the specification.
+But then JSON Schema added an [`examples`](https://json-schema.org/draft/2019-09/json-schema-validation.html#rfc.section.9.5) field to a new version of the specification.
 
 And then the new OpenAPI 3.1.0 was based on the latest version (JSON Schema 2020-12) that included this new field `examples`.
 
 And now this new `examples` field takes precedence over the old single (and custom) `example` field, that is now deprecated.
 
-This new `examples` field in JSON Schema is **just a  list** of examples, not a dict with extra metadata as in the other places in OpenAPI (described above).
+This new `examples` field in JSON Schema is **just a `list`** of examples, not a dict with extra metadata as in the other places in OpenAPI (described above).
 
 Note
 

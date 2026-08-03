@@ -4,7 +4,7 @@ title: Dependencies with yield - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-with-yield
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Dependencies with yield
@@ -480,12 +480,12 @@ def get_user_me(username: str = Depends(get_username, scope="function")):
 ```
 `Depends()` receives a `scope` parameter that can be:
 
-- `"function"`: start the dependency before the- *path operation function*that handles the request, end the dependency after the- *path operation function*ends, but- **before**the response is sent back to the client. So, the dependency function will be executed- **around**the- *path operation*.- **function**
-- `"request"`: start the dependency before the- *path operation function*that handles the request (similar to when using- `"function"`), but end- **after**the response is sent back to the client. So, the dependency function will be executed- **around**the- **request**and response cycle.
+- `"function"` : start the dependency before the*path operation function* that handles the request, end the dependency after the*path operation function* ends, but**before** the response is sent back to the client. So, the dependency function will be executed**around** the*path operation **function*** .
+- `"request"` : start the dependency before the*path operation function* that handles the request (similar to when using`"function"` ), but end**after** the response is sent back to the client. So, the dependency function will be executed**around** the**request** and response cycle.
 
 If not specified and the dependency has `yield`, it will have a `scope` of `"request"` by default.
 
-`scope` for sub-dependencies
+### `scope` for sub-dependencies
 
 When you declare a dependency with a `scope="request"` (the default), any sub-dependency needs to also have a `scope` of `"request"`.
 
@@ -516,7 +516,7 @@ participant operation as Path Operation
 
 Dependencies with `yield` have evolved over time to cover different use cases and fix some issues.
 
-If you want to see what has changed in different versions of FastAPI, you can read more about it in the advanced guide, in [Advanced Dependencies - Dependencies with  yield, HTTPException, except and Background Tasks](../../../advanced/advanced-dependencies/#dependencies-with-yield-httpexception-except-and-background-tasks).
+If you want to see what has changed in different versions of FastAPI, you can read more about it in the advanced guide, in [Advanced Dependencies - Dependencies with `yield`, `HTTPException`, `except` and Background Tasks](../../../advanced/advanced-dependencies/#dependencies-with-yield-httpexception-except-and-background-tasks).
 
 ## Context Managers
 
@@ -524,7 +524,7 @@ If you want to see what has changed in different versions of FastAPI, you can re
 
 "Context Managers" are any of those Python objects that you can use in a `with` statement.
 
-For example, [you can use  with to read a file](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files):
+For example, [you can use `with` to read a file](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files):
 
 ```
 with open("./somefile.txt") as f:
@@ -545,7 +545,7 @@ This is, more or less, an "advanced" idea.
 
 If you are just starting with **FastAPI** you might want to skip it for now.
 
-In Python, you can create Context Managers by [creating a class with two methods:  __enter__() and __exit__()](https://docs.python.org/3/reference/datamodel.html#context-managers).
+In Python, you can create Context Managers by [creating a class with two methods: `__enter__()` and `__exit__()`](https://docs.python.org/3/reference/datamodel.html#context-managers).
 
 You can also use them inside of **FastAPI** dependencies with `yield` by using
 `with` or `async with` statements inside of the dependency function:

@@ -4,7 +4,7 @@ title: Form Models - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/request-form-models
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Form Models
@@ -13,7 +13,7 @@ You can use **Pydantic models** to declare **form fields** in FastAPI.
 
 Note
 
-To use forms, first install [ python-multipart](https://github.com/Kludex/python-multipart).
+To use forms, first install [`python-multipart`](https://github.com/Kludex/python-multipart).
 
 Add it to your project:
 
@@ -108,9 +108,9 @@ If a client tries to send some extra data, they will receive an **error** respon
 
 For example, if the client tries to send the form fields:
 
-- `username`:- `Rick`
-- `password`:- `Portal Gun`
-- `extra`:- `Mr. Poopybutthole`
+- `username` :`Rick`
+- `password` :`Portal Gun`
+- `extra` :`Mr. Poopybutthole`
 
 They will receive an error response telling them that the field `extra` is not allowed:
 

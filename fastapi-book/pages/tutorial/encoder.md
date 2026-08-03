@@ -4,7 +4,7 @@ title: JSON Compatible Encoder - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/encoder
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # JSON Compatible Encoder
@@ -47,7 +47,7 @@ def update_item(id: str, item: Item):
 ```
 In this example, it would convert the Pydantic model to a `dict`, and the `datetime` to a `str`.
 
-The result of calling it is something that can be encoded with the Python standard [ json.dumps()](https://docs.python.org/3/library/json.html#json.dumps).
+The result of calling it is something that can be encoded with the Python standard [`json.dumps()`](https://docs.python.org/3/library/json.html#json.dumps).
 
 It doesn't return a large `str` containing the data in JSON format (as a string). It returns a Python standard data structure (e.g. a `dict`) with values and sub-values that are all compatible with JSON.
 

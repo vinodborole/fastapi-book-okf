@@ -4,7 +4,7 @@ title: Security - First Steps - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/security/first-steps
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Security - First Steps
@@ -58,11 +58,9 @@ async def read_items(token: str = Depends(oauth2_scheme)):
 
 Note
 
-The [ python-multipart](https://github.com/Kludex/python-multipart) package is automatically installed with 
+The [`python-multipart`](https://github.com/Kludex/python-multipart) package is automatically installed with **FastAPI** when you run the `uv add "fastapi[standard]"` command.
 
-**FastAPI**when you run the
-
-`uv add "fastapi[standard]"` command.However, if you use the `uv add fastapi` command, the `python-multipart` package is not included by default.
+However, if you use the `uv add fastapi` command, the `python-multipart` package is not included by default.
 
 To install it manually, add it to your project with:
 
@@ -115,21 +113,21 @@ But in this case, the same **FastAPI** application will handle the API and the a
 
 So, let's review it from that simplified point of view:
 
-- The user types the `username`and`password`in the frontend, and hits`Enter`.
-- The frontend (running in the user's browser) sends that `username`and`password`to a specific URL in our API (declared with`tokenUrl="token"`).
-- The API checks that `username`and`password`, and responds with a "token" (we haven't implemented any of this yet).- A "token" is just a string with some content that we can use later to verify this user.
-- Normally, a token is set to expire after some time.- So, the user will have to log in again at some point later.
-- And if the token is stolen, the risk is less. It is not like a permanent key that will work forever (in most of the cases).
- 
- 
+- The user types the `username` and`password` in the frontend, and hits`Enter` .
+- The frontend (running in the user's browser) sends that `username` and`password` to a specific URL in our API (declared with`tokenUrl="token"` ).
+- The API checks that `username` and`password` , and responds with a "token" (we haven't implemented any of this yet).
+  - A "token" is just a string with some content that we can use later to verify this user.
+  - Normally, a token is set to expire after some time.
+    - So, the user will have to log in again at some point later.
+    - And if the token is stolen, the risk is less. It is not like a permanent key that will work forever (in most of the cases).
 - The frontend stores that token temporarily somewhere.
 - The user clicks in the frontend to go to another section of the frontend web app.
-- The frontend needs to fetch some more data from the API.- But it needs authentication for that specific endpoint.
-- So, to authenticate with our API, it sends a header `Authorization`with a value of`Bearer`plus the token.
-- If the token contains `foobar`, the content of the`Authorization`header would be:`Bearer foobar`.
- 
+- The frontend needs to fetch some more data from the API.
+  - But it needs authentication for that specific endpoint.
+  - So, to authenticate with our API, it sends a header `Authorization` with a value of`Bearer` plus the token.
+  - If the token contains `foobar` , the content of the`Authorization` header would be:`Bearer foobar` .
 
-**FastAPI**'s `OAuth2PasswordBearer`
+## **FastAPI**'s `OAuth2PasswordBearer`
 
 **FastAPI** provides several tools, at different levels of abstraction, to implement these security features.
 

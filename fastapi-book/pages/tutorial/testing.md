@@ -4,7 +4,7 @@ title: Testing - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/testing
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Testing
@@ -64,7 +64,7 @@ In a real application, you probably would have your tests in a different file.
 
 And your **FastAPI** application might also be composed of several files/modules, etc.
 
-**FastAPI** app file
+### **FastAPI** app file
 
 Let's say you have a file structure as described in [Bigger Applications](../bigger-applications/):
 
@@ -317,11 +317,11 @@ Then you just do the same in your tests.
 
 E.g.:
 
-- To pass a *path*or*query*parameter, add it to the URL itself.
-- To pass a JSON body, pass a Python object (e.g. a `dict`) to the parameter`json`.
-- If you need to send *Form Data*instead of JSON, use the`data`parameter instead.
-- To pass *headers*, use a`dict`in the`headers`parameter.
-- For *cookies*, a`dict`in the`cookies`parameter.
+- To pass a *path* or*query* parameter, add it to the URL itself.
+- To pass a JSON body, pass a Python object (e.g. a `dict` ) to the parameter`json` .
+- If you need to send *Form Data* instead of JSON, use the`data` parameter instead.
+- To pass *headers* , use a`dict` in the`headers` parameter.
+- For *cookies* , a`dict` in the`cookies` parameter.
 
 For more information about how to pass data to the backend (using `httpx` or the `TestClient`) check the [HTTPX documentation](https://www.python-httpx.org).
 

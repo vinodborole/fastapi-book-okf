@@ -4,7 +4,7 @@ title: Form Data - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/request-forms
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Form Data
@@ -13,7 +13,7 @@ When you need to receive form fields instead of JSON, you can use `Form`.
 
 Note
 
-To use forms, first install [ python-multipart](https://github.com/Kludex/python-multipart).
+To use forms, first install [`python-multipart`](https://github.com/Kludex/python-multipart).
 
 Add it to your project:
 
@@ -96,7 +96,7 @@ Data from forms is normally encoded using the "media type" `application/x-www-fo
 
 But when the form includes files, it is encoded as `multipart/form-data`. You'll read about handling files in the next chapter.
 
-If you want to read more about these encodings and form fields, head to the [MDN web docs for  POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST).
+If you want to read more about these encodings and form fields, head to the [MDN web docs for `POST`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST).
 
 Warning
 

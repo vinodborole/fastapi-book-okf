@@ -4,14 +4,14 @@ title: Body - Updates - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/body-updates
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Body - Updates
 
 ## Update replacing with `PUT`
 
-To update an item you can use the [HTTP  PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT) operation.
+To update an item you can use the [HTTP `PUT`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT) operation.
 
 You can use the `jsonable_encoder` to convert the input data to data that can be stored as JSON (e.g. with a NoSQL database). For example, converting `datetime` to `str`.
 
@@ -59,9 +59,7 @@ And the data would be saved with that "new" `tax` of `10.5`.
 
 ## Partial updates with `PATCH`
 
-You can also use the [HTTP  PATCH](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH) operation to 
-
-*partially*update data.
+You can also use the [HTTP `PATCH`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH) operation to *partially* update data.
 
 This means that you can send only the data that you want to update, leaving the rest intact.
 
@@ -151,14 +149,14 @@ async def update_item(item_id: str, item: Item) -> Item:
 
 In summary, to apply partial updates you would:
 
-- (Optionally) use `PATCH`instead of`PUT`.
+- (Optionally) use `PATCH` instead of`PUT` .
 - Retrieve the stored data.
 - Put that data in a Pydantic model.
-- Generate a `dict`without default values from the input model (using`exclude_unset`).- This way you can update only the values actually set by the user, instead of overriding values already stored with default values in your model.
- 
-- Create a copy of the stored model, updating its attributes with the received partial updates (using the `update`parameter).
-- Convert the copied model to something that can be stored in your DB (for example, using the `jsonable_encoder`).- This is comparable to using the model's `.model_dump()`method again, but it makes sure (and converts) the values to data types that can be converted to JSON, for example,`datetime`to`str`.
- 
+- Generate a `dict` without default values from the input model (using`exclude_unset` ).
+  - This way you can update only the values actually set by the user, instead of overriding values already stored with default values in your model.
+- Create a copy of the stored model, updating its attributes with the received partial updates (using the `update` parameter).
+- Convert the copied model to something that can be stored in your DB (for example, using the `jsonable_encoder` ).
+  - This is comparable to using the model's `.model_dump()` method again, but it makes sure (and converts) the values to data types that can be converted to JSON, for example,`datetime` to`str` .
 - This is comparable to using the model's 
 - Save the data to your DB.
 - Return the updated model.

@@ -4,7 +4,7 @@ title: Security - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/security
-timestamp: '2026-07-07T08:53:01.809087+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Security
@@ -77,24 +77,24 @@ By using them, you can take advantage of all these standard-based tools, includi
 
 OpenAPI defines the following security schemes:
 
-- `apiKey`: an application specific key that can come from:- A query parameter.
-- A header.
-- A cookie.
- 
-- `http`: standard HTTP authentication systems, including:- `bearer`: a header- `Authorization`with a value of- `Bearer`plus a token. This is inherited from OAuth2.
-- HTTP Basic authentication.
-- HTTP Digest, etc.
- 
-- `oauth2`: all the OAuth2 ways to handle security (called "flows").- Several of these flows are appropriate for building an OAuth 2.0 authentication provider (like Google, Facebook, X (Twitter), GitHub, etc):- `implicit`
-- `clientCredentials`
-- `authorizationCode`
- 
-- But there is one specific "flow" that can be perfectly used for handling authentication in the same application directly:- `password`: some next chapters will cover examples of this.
- 
- 
+- `apiKey` : an application specific key that can come from:
+  - A query parameter.
+  - A header.
+  - A cookie.
+- `http` : standard HTTP authentication systems, including:
+  - `bearer` : a header`Authorization` with a value of`Bearer` plus a token. This is inherited from OAuth2.
+  - HTTP Basic authentication.
+  - HTTP Digest, etc.
+- `oauth2` : all the OAuth2 ways to handle security (called "flows").
+  - Several of these flows are appropriate for building an OAuth 2.0 authentication provider (like Google, Facebook, X (Twitter), GitHub, etc):
+    - `implicit`
+    - `clientCredentials`
+    - `authorizationCode`
+  - But there is one specific "flow" that can be perfectly used for handling authentication in the same application directly:
+    - `password` : some next chapters will cover examples of this.
 - Several of these flows are appropriate for building an OAuth 2.0 authentication provider (like Google, Facebook, X (Twitter), GitHub, etc):
-- `openIdConnect`: has a way to define how to discover OAuth2 authentication data automatically.- This automatic discovery is what is defined in the OpenID Connect specification.
- 
+- `openIdConnect` : has a way to define how to discover OAuth2 authentication data automatically.
+  - This automatic discovery is what is defined in the OpenID Connect specification.
 
 Tip
 
@@ -102,7 +102,7 @@ Integrating other authentication/authorization providers like Google, Facebook, 
 
 The most complex problem is building an authentication/authorization provider like those, but **FastAPI** gives you the tools to do it easily, while doing the heavy lifting for you.
 
-**FastAPI** utilities
+## **FastAPI** utilities
 
 FastAPI provides several tools for each of these security schemes in the `fastapi.security` module that simplify using these security mechanisms.
 

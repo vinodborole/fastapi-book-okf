@@ -4,7 +4,7 @@ title: Debugging - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/debugging
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Debugging
@@ -87,7 +87,7 @@ For example, in Visual Studio Code, you can:
 - Go to the "Debug" panel.
 - "Add configuration...".
 - Select "Python"
-- Run the debugger with the option "`Python: Current File (Integrated Terminal)`".
+- Run the debugger with the option "`Python: Current File (Integrated Terminal)` ".
 
 It will then start the server with your **FastAPI** code, stop at your breakpoints, etc.
 
@@ -98,7 +98,7 @@ If you use PyCharm, you can:
 - Open the "Run" menu.
 - Select the option "Debug...".
 - Then a context menu shows up.
-- Select the file to debug (in this case, `main.py`).
+- Select the file to debug (in this case, `main.py` ).
 
 It will then start the server with your **FastAPI** code, stop at your breakpoints, etc.
 

@@ -4,7 +4,7 @@ title: SQL (Relational) Databases - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/sql-databases
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # SQL (Relational) Databases
@@ -181,17 +181,17 @@ The `Hero` class is very similar to a Pydantic model (in fact, underneath, it ac
 There are a few differences:
 
 - 
-`table=True`tells SQLModel that this is a*table model*, it should represent a**table**in the SQL database, it's not just a*data model*(as would be any other regular Pydantic class).
+`table=True` tells SQLModel that this is a*table model* , it should represent a**table** in the SQL database, it's not just a*data model* (as would be any other regular Pydantic class).
 - 
-`Field(primary_key=True)`tells SQLModel that the`id`is the**primary key**in the SQL database (you can learn more about SQL primary keys in the SQLModel docs).**Note:**We use`int | None`for the primary key field so that in Python code we can*create an object without an*(`id``id=None`), assuming the database will*generate it when saving*. SQLModel understands that the database will provide the`id`and*defines the column as a non-null*in the database schema. See`INTEGER`[SQLModel docs on primary keys](https://sqlmodel.tiangolo.com/tutorial/create-db-and-table/#primary-key-id)for details.
+`Field(primary_key=True)` tells SQLModel that the`id` is the**primary key** in the SQL database (you can learn more about SQL primary keys in the SQLModel docs).**Note:** We use`int | None` for the primary key field so that in Python code we can*create an object without an `id`* (`id=None` ), assuming the database will*generate it when saving* . SQLModel understands that the database will provide the`id` and*defines the column as a non-null `INTEGER`* in the database schema. See[SQLModel docs on primary keys](https://sqlmodel.tiangolo.com/tutorial/create-db-and-table/#primary-key-id) for details.
 - 
-`Field(index=True)`tells SQLModel that it should create a**SQL index**for this column, that would allow faster lookups in the database when reading data filtered by this column.SQLModel will know that something declared as `str`will be a SQL column of type`TEXT`(or`VARCHAR`, depending on the database).
+`Field(index=True)` tells SQLModel that it should create a**SQL index** for this column, that would allow faster lookups in the database when reading data filtered by this column.SQLModel will know that something declared as `str` will be a SQL column of type`TEXT` (or`VARCHAR` , depending on the database).
 
 ### Create an Engine
 
 A SQLModel `engine` (underneath it's actually a SQLAlchemy `engine`) is what **holds the connections** to the database.
 
-You would have **one single  engine object** for all your code to connect to the same database.
+You would have **one single `engine` object** for all your code to connect to the same database.
 
 ```
 # Code above omitted 👆
@@ -313,9 +313,9 @@ def delete_hero(hero_id: int, session: Session = Depends(get_session)):
 ```
 Using `check_same_thread=False` allows FastAPI to use the same SQLite database in different threads. This is necessary as **one single request** could use **more than one thread** (for example in dependencies).
 
-Don't worry, with the way the code is structured, we'll make sure we use **a single SQLModel  session per request** later, this is actually what the 
+Don't worry, with the way the code is structured, we'll make sure we use **a single SQLModel *session* per request** later, this is actually what the `check_same_thread` is trying to achieve.
 
-`check_same_thread` is trying to achieve.### Create the Tables
+### Create the Tables
 
 We then add a function that uses `SQLModel.metadata.create_all(engine)` to **create the tables** for all the *table models*.
 
@@ -437,13 +437,9 @@ def delete_hero(hero_id: int, session: Session = Depends(get_session)):
 ```
 ### Create a Session Dependency
 
-A ** Session** is what stores the 
+A **`Session`** is what stores the **objects in memory** and keeps track of any changes needed in the data, then it **uses the `engine`** to communicate with the database.
 
-**objects in memory**and keeps track of any changes needed in the data, then it
-
-**uses the**to communicate with the database.
-
-`engine`We will create a FastAPI **dependency** with `yield` that will provide a new `Session` for each request. This is what ensures that we use a single session per request. 🤓
+We will create a FastAPI **dependency** with `yield` that will provide a new `Session` for each request. This is what ensures that we use a single session per request. 🤓
 
 Then we create an `Annotated` dependency `SessionDep` to simplify the rest of the code that will use this dependency.
 
@@ -1230,7 +1226,7 @@ And any model class that doesn't have `table=True` is a **data model**, these on
 
 With SQLModel, we can use **inheritance** to **avoid duplicating** all the fields in all the cases.
 
-`HeroBase` - the base class
+#### `HeroBase` - the base class
 
 Let's start with a `HeroBase` model that has all the **fields that are shared** by all the models:
 
@@ -1398,7 +1394,7 @@ def delete_hero(hero_id: int, session: Session = Depends(get_session)):
     session.commit()
     return {"ok": True}
 ```
-`Hero` - the *table model*
+#### `Hero` - the *table model*
 
 Then let's create `Hero`, the actual *table model*, with the **extra fields** that are not always in the other models:
 
@@ -1576,7 +1572,7 @@ def delete_hero(hero_id: int, session: Session = Depends(get_session)):
     session.commit()
     return {"ok": True}
 ```
-`HeroPublic` - the public *data model*
+#### `HeroPublic` - the public *data model*
 
 Next, we create a `HeroPublic` model, this is the one that will be **returned** to the clients of the API.
 
@@ -1764,7 +1760,7 @@ def delete_hero(hero_id: int, session: Session = Depends(get_session)):
     session.commit()
     return {"ok": True}
 ```
-`HeroCreate` - the *data model* to create a hero
+#### `HeroCreate` - the *data model* to create a hero
 
 Now we create a `HeroCreate` model, this is the one that will **validate** the data from the clients.
 
@@ -1952,7 +1948,7 @@ def delete_hero(hero_id: int, session: Session = Depends(get_session)):
     session.commit()
     return {"ok": True}
 ```
-`HeroUpdate` - the *data model* to update a hero
+#### `HeroUpdate` - the *data model* to update a hero
 
 We didn't have a way to **update a hero** in the previous version of the app, but now with **multiple models**, we can do it. 🎉
 
@@ -3021,13 +3017,9 @@ If you go to the `/docs` API UI, you will see that it is now updated, and it won
 
 ## Recap
 
-You can use [ SQLModel](https://sqlmodel.tiangolo.com/) to interact with a SQL database and simplify the code with 
+You can use [**SQLModel**](https://sqlmodel.tiangolo.com/) to interact with a SQL database and simplify the code with *data models*  and *table models*.
 
-*data models*and
-
-*table models*.
-
-You can learn a lot more at the **SQLModel** docs, there's a longer mini [tutorial on using SQLModel with  FastAPI](https://sqlmodel.tiangolo.com/tutorial/fastapi/). 🚀
+You can learn a lot more at the **SQLModel** docs, there's a longer mini [tutorial on using SQLModel with **FastAPI**](https://sqlmodel.tiangolo.com/tutorial/fastapi/). 🚀
 
 # Citations
 

@@ -4,7 +4,7 @@ title: Query Parameters - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/query-params
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Query Parameters
@@ -28,8 +28,8 @@ http://127.0.0.1:8000/items/?skip=0&limit=10
 ```
 ...the query parameters are:
 
-- `skip`: with a value of- `0`
-- `limit`: with a value of- `10`
+- `skip` : with a value of`0`
+- `limit` : with a value of`10`
 
 As they are part of the URL, they are "naturally" strings.
 
@@ -65,8 +65,8 @@ http://127.0.0.1:8000/items/?skip=20
 ```
 The parameter values in your function will be:
 
-- `skip=20`: because you set it in the URL
-- `limit=10`: because that was the default value
+- `skip=20` : because you set it in the URL
+- `limit=10` : because that was the default value
 
 ## Optional parameters
 
@@ -223,9 +223,9 @@ async def read_user_item(
 ```
 In this case, there are 3 query parameters:
 
-- `needy`, a required- `str`.
-- `skip`, an- `int`with a default value of- `0`.
-- `limit`, an optional- `int`.
+- `needy` , a required`str` .
+- `skip` , an`int` with a default value of`0` .
+- `limit` , an optional`int` .
 
 Tip
 

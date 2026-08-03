@@ -4,14 +4,14 @@ title: Server-Sent Events (SSE) - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/server-sent-events
-timestamp: '2026-07-09T12:16:48.815563+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Server-Sent Events (SSE)
 
 You can stream data to the client using **Server-Sent Events** (SSE).
 
-This is similar to [Stream JSON Lines](../stream-json-lines/), but uses the `text/event-stream` format, which is supported natively by browsers with the [ EventSource API](https://developer.mozilla.org/en-US/docs/Web/API/EventSource).
+This is similar to [Stream JSON Lines](../stream-json-lines/), but uses the `text/event-stream` format, which is supported natively by browsers with the [`EventSource` API](https://developer.mozilla.org/en-US/docs/Web/API/EventSource).
 
 Note
 
@@ -206,7 +206,7 @@ def sse_items_no_async_no_annotation():
 ```
 ### No Return Type
 
-You can also omit the return type. FastAPI will use the [ jsonable_encoder](.././encoder/) to convert the data and send it.
+You can also omit the return type. FastAPI will use the [`jsonable_encoder`](.././encoder/) to convert the data and send it.
 
 ```
 # Code above omitted 👆
@@ -249,7 +249,7 @@ def sse_items_no_async_no_annotation():
     for item in items:
         yield item
 ```
-`ServerSentEvent`
+## `ServerSentEvent`
 
 If you need to set SSE fields like `event`, `id`, `retry`, or `comment`, you can yield `ServerSentEvent` objects instead of plain data.
 
@@ -358,9 +358,9 @@ async def stream_chat(prompt: Prompt) -> AsyncIterable[ServerSentEvent]:
 
 FastAPI implements some SSE best practices out of the box.
 
-- Send a **"keep alive"**every 15 seconds when there hasn't been any message, to prevent some proxies from closing the connection, as suggested in the`ping`comment[HTML specification: Server-Sent Events](https://html.spec.whatwg.org/multipage/server-sent-events.html#authoring-notes).
-- Set the `Cache-Control: no-cache`header to**prevent caching**of the stream.
-- Set a special header `X-Accel-Buffering: no`to**prevent buffering**in some proxies like Nginx.
+- Send a **"keep alive" `ping` comment** every 15 seconds when there hasn't been any message, to prevent some proxies from closing the connection, as suggested in the[HTML specification: Server-Sent Events](https://html.spec.whatwg.org/multipage/server-sent-events.html#authoring-notes) .
+- Set the `Cache-Control: no-cache` header to**prevent caching** of the stream.
+- Set a special header `X-Accel-Buffering: no` to**prevent buffering** in some proxies like Nginx.
 
 You don't have to do anything about it, it works out of the box. 🤓
 

@@ -4,7 +4,7 @@ title: Request Files - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/request-files
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Request Files
@@ -13,7 +13,7 @@ You can define files to be uploaded by the client using `File`.
 
 Note
 
-To receive uploaded files, first install [ python-multipart](https://github.com/Kludex/python-multipart).
+To receive uploaded files, first install [`python-multipart`](https://github.com/Kludex/python-multipart).
 
 Add it to your project:
 
@@ -135,31 +135,31 @@ async def create_upload_file(file: UploadFile):
 ```
 Using `UploadFile` has several advantages over `bytes`:
 
-- You don't have to use `File()`in the default value of the parameter.
-- It uses a "spooled" file:- A file stored in memory up to a maximum size limit, and after passing this limit it will be stored on disk.
- 
+- You don't have to use `File()` in the default value of the parameter.
+- It uses a "spooled" file:
+  - A file stored in memory up to a maximum size limit, and after passing this limit it will be stored on disk.
 - This means that it will work well for large files like images, videos, large binaries, etc. without consuming all the memory.
 - You can get metadata from the uploaded file.
-- It has a [file-like](https://docs.python.org/3/glossary.html#term-file-like-object)`async`interface.
-- It exposes an actual Python `SpooledTemporaryFile`
+- It has a [file-like](https://docs.python.org/3/glossary.html#term-file-like-object)`async` interface.
+- It exposes an actual Python [`SpooledTemporaryFile`](https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile) object that you can pass directly to other libraries that expect a file-like object.
 
-`UploadFile`
+### `UploadFile`
 
 `UploadFile` has the following attributes:
 
-- `filename`: A- `str`with the original file name that was uploaded (e.g.- `myimage.jpg`).
-- `content_type`: A- `str`with the content type (MIME type / media type) (e.g.- `image/jpeg`).
-- `file`: A- `SpooledTemporaryFile`- [file-like](https://docs.python.org/3/glossary.html#term-file-like-object)object). This is the actual Python file object that you can pass directly to other functions or libraries that expect a "file-like" object.
+- `filename` : A`str` with the original file name that was uploaded (e.g.`myimage.jpg` ).
+- `content_type` : A`str` with the content type (MIME type / media type) (e.g.`image/jpeg` ).
+- `file` : A[`SpooledTemporaryFile`](https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile) (a[file-like](https://docs.python.org/3/glossary.html#term-file-like-object) object). This is the actual Python file object that you can pass directly to other functions or libraries that expect a "file-like" object.
 
 `UploadFile` has the following `async` methods. They all call the corresponding file methods underneath (using the internal `SpooledTemporaryFile`).
 
-- `write(data)`: Writes- `data`(- `str`or- `bytes`) to the file.
-- `read(size)`: Reads- `size`(- `int`) bytes/characters of the file.
-- `seek(offset)`: Goes to the byte position- `offset`(- `int`) in the file.- E.g., `await myfile.seek(0)`would go to the start of the file.
-- This is especially useful if you run `await myfile.read()`once and then need to read the contents again.
- 
+- `write(data)` : Writes`data` (`str` or`bytes` ) to the file.
+- `read(size)` : Reads`size` (`int` ) bytes/characters of the file.
+- `seek(offset)` : Goes to the byte position`offset` (`int` ) in the file.
+  - E.g., `await myfile.seek(0)` would go to the start of the file.
+  - This is especially useful if you run `await myfile.read()` once and then need to read the contents again.
 - E.g., 
-- `close()`: Closes the file.
+- `close()` : Closes the file.
 
 As all these methods are `async` methods, you need to "await" them.
 
@@ -193,7 +193,7 @@ Data from forms is normally encoded using the "media type" `application/x-www-fo
 
 But when the form includes files, it is encoded as `multipart/form-data`. If you use `File`, **FastAPI** will know it has to get the files from the correct part of the body.
 
-If you want to read more about these encodings and form fields, head to the [MDN web docs for  POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST).
+If you want to read more about these encodings and form fields, head to the [MDN web docs for `POST`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST).
 
 Warning
 
@@ -244,7 +244,7 @@ async def create_upload_file(file: UploadFile | None = None):
     else:
         return {"filename": file.filename}
 ```
-`UploadFile` with Additional Metadata
+## `UploadFile` with Additional Metadata
 
 You can also use `File()` with `UploadFile`, for example, to set additional metadata:
 

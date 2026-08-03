@@ -4,7 +4,7 @@ title: Extra Models - FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready
   for production
 resource: https://fastapi.tiangolo.com/tutorial/extra-models
-timestamp: '2026-07-27T10:00:31.905657+00:00'
+timestamp: '2026-08-03T09:55:10.294948+00:00'
 ---
 
 # Extra Models
@@ -13,9 +13,9 @@ Continuing with the previous example, it will be common to have more than one re
 
 This is especially the case for user models, because:
 
-- The **input model**needs to be able to have a password.
-- The **output model**should not have a password.
-- The **database model**would probably need to have a hashed password.
+- The **input model** needs to be able to have a password.
+- The **output model** should not have a password.
+- The **database model** would probably need to have a hashed password.
 
 Danger
 
@@ -202,19 +202,19 @@ async def create_user(user_in: UserIn):
     user_saved = fake_save_user(user_in)
     return user_saved
 ```
-`Union` or `anyOf`
+## `Union` or `anyOf`
 
 You can declare a response to be the `Union` of two or more types, that means, that the response would be any of them.
 
 It will be defined in OpenAPI with `anyOf`.
 
-To do that, use the standard Python type hint [ typing.Union](https://docs.python.org/3/library/typing.html#typing.Union):
+To do that, use the standard Python type hint [`typing.Union`](https://docs.python.org/3/library/typing.html#typing.Union):
 
 Note
 
-When defining a [ Union](https://pydantic.dev/docs/validation/latest/concepts/unions/), include the most specific type first, followed by the less specific type. In the example below, the more specific 
+When defining a [`Union`](https://pydantic.dev/docs/validation/latest/concepts/unions/), include the most specific type first, followed by the less specific type. In the example below, the more specific `PlaneItem` comes before `CarItem` in `Union[PlaneItem, CarItem]`.
 
-`PlaneItem` comes before `CarItem` in `Union[PlaneItem, CarItem]`.```
+```
 from fastapi import FastAPI
 from pydantic import BaseModel
 app = FastAPI()
@@ -238,7 +238,7 @@ items = {
 async def read_item(item_id: str):
     return items[item_id]
 ```
-`Union` in Python 3.10
+### `Union` in Python 3.10
 
 In this example we pass `Union[PlaneItem, CarItem]` as the value of the argument `response_model`.
 
